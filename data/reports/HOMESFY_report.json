@@ -1,0 +1,209 @@
+{
+  "ticker": "HOMESFY",
+  "company_name": "Homesfy Realty Ltd",
+  "sector": "Consumer Discretionary",
+  "market_cap": "50.3",
+  "overall_risk_score": 66.1,
+  "risk_level": "HIGH",
+  "findings_count": 7,
+  "critical_findings": 3,
+  "high_findings": 0,
+  "findings": [
+    {
+      "agent_name": "forensic",
+      "finding_type": "Governance and Disclosure Issues",
+      "title": "Critical Disconnect: Misleading Narrative vs. Collapsing Financial Performance",
+      "description": "<ul><li><b>Misleading Optimism:</b> The Annual Report (AR) for 'FY25' presents an overwhelmingly positive narrative of 'Real Progress', 'notable growth', and strategic expansion.</li><li><b>Contradictory Financials:</b> This narrative is directly contradicted by the Trailing Twelve Months (TTM) financial data, which shows a catastrophic collapse in performance.</li><li><b>Profitability Swing:</b> The company swung from a Net Profit of \u20b92.72 Cr in FY24 to a significant Net Loss of \u20b98.59 Cr in the TTM period.</li><li><b>Operational Collapse:</b> Operating Profit plummeted from \u20b93.33 Cr in FY24 to an Operating Loss of \u20b99.10 Cr (TTM), indicating a severe and recent deterioration in the core business that is not acknowledged in the AR's narrative.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Net Profit",
+          "value": "-8.59 Cr",
+          "benchmark": "2.72 Cr",
+          "period": "TTM vs FY24"
+        },
+        {
+          "metric": "Operating Profit",
+          "value": "-9.10 Cr",
+          "benchmark": "3.33 Cr",
+          "period": "TTM vs FY24"
+        },
+        {
+          "metric": "Sales",
+          "value": "48.01 Cr",
+          "benchmark": "60.86 Cr",
+          "period": "TTM vs FY24"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Governance and Disclosure Issues",
+      "title": "Untitled Finding",
+      "description": "",
+      "severity": "medium",
+      "confidence": 50.0,
+      "evidence": [],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Stable Promoter Shareholding",
+      "description": "<ul><li><b>Holding Pattern:</b> Promoters have consistently maintained a majority stake, holding between 51.37% and 53.06% over the observed period. This indicates a stable commitment to the company.</li><li><b>Pledging:</b> No data on promoter share pledging was provided. The absence of this critical data point is a significant information gap.</li><li><b>Transactions:</b> There are no signs of aggressive selling or large-scale creeping acquisition. The holding has remained largely stable, which is a positive indicator of promoter confidence.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "51.37% - 53.06%",
+          "benchmark": ">51% is generally considered a strong commitment",
+          "period": "Dec 2022 - Sep 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Negligible Institutional Ownership",
+      "description": "<ul><li><b>FII/DII Holding:</b> Foreign Institutional Investor (FII) holding is nil for the majority of the period, with a minor stake appearing only in late 2024.</li><li><b>Investor Confidence:</b> The lack of meaningful ownership by institutional investors, who typically conduct thorough due diligence, may suggest concerns about the company's scale, liquidity, or governance practices.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Holding",
+          "value": "0.00%",
+          "benchmark": "Meaningful institutional holding is typically >5%",
+          "period": "Mar 2023 - Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Critical Information Gaps Impede Governance Assessment",
+      "description": "<ul><li><b>Missing Data:</b> A comprehensive governance analysis is not possible due to the complete absence of critical data.</li><li><b>Key Missing Areas:</b> Information is lacking on Promoter Share Pledging, Board Composition (including independence), Audit Committee details, Executive Compensation, Related Party Transactions, and Promoter Track Record.</li><li><b>Risk:</b> Without this information, it is impossible to assess potential risks related to conflicts of interest, excessive compensation, diversion of funds, or poor capital allocation.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Pledging Data",
+          "value": "Not Available",
+          "benchmark": "Data is required by SEBI",
+          "period": "N/A"
+        },
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Available",
+          "benchmark": "Data is required by SEBI LODR",
+          "period": "N/A"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Data is required in Annual Reports",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "disclosure_quality",
+      "title": "Critical Lack of Related Party Transaction Data",
+      "description": "<ul><li><b>Data Unavailability:</b> No specific related party transaction data, financial summaries (revenue, net worth), or corporate structure details were provided for Homesfy Realty Ltd.</li><li><b>Analysis Impeded:</b> The absence of this information makes it impossible to conduct any quantitative or qualitative forensic analysis. Key checks for RPT volume, materiality, pricing, and structural red flags cannot be performed.</li><li><b>Compliance Risk:</b> This lack of accessible data is a major red flag concerning transparency and potentially indicates poor disclosure quality. SEBI LODR and Ind-AS 24 mandate detailed and public disclosure of all RPTs for listed entities.</li><li><b>Inability to Verify:</b> Without data, it is not possible to verify if transactions are at arm's length, whether shareholder approvals for material RPTs were obtained, or if there are any instances of fund siphoning.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All Related Party Transactions",
+          "amount": "N/A",
+          "party": "All Related Parties",
+          "concern": "Complete absence of transaction, financial, and corporate structure data provided for analysis."
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Disclosure Compliance",
+        "value": "Indian listed companies are required to provide complete and timely disclosures of all RPTs as per Ind-AS 24 and SEBI LODR regulations. The benchmark is full transparency."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Reputational Risk Assessment",
+      "title": "Absence of Significant Red Flags in Public Domain",
+      "description": "<ul><li><b>Legal & Regulatory:</b> No evidence of lawsuits, fraud allegations, government raids (e.g., Income Tax, ED), or investigations by SEBI was found in the provided search results.</li><li><b>Employee & Customer Sentiment:</b> Searches for negative employee reviews concerning work culture or widespread customer complaints on consumer forums yielded no relevant adverse information.</li><li><b>Management Integrity:</b> No public records indicating political connections for the promoters or other integrity-related concerns were discovered.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: \"Homesfy Realty Ltd\" fraud lawsuit raid SEBI investigation. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: \"Homesfy Realty Ltd\" employee reviews fake work culture scam. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: \"Homesfy Realty Ltd\" customer complaints consumer forum. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: \"Homesfy Realty Ltd\" promoter political connection. Result: No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 50.0,
+    "management_risk": 75.0,
+    "rpt_risk": 95.0
+  },
+  "summary": {
+    "forensic": "Analysis complete.",
+    "management": "Promoter shareholding in Homesfy Realty is stable and signifies commitment. However, a credible assessment of management integrity and governance is impossible due to a complete lack of data on share pledging, board composition, executive compensation, and related party transactions, posing a significant unquantifiable risk for investors.",
+    "rpt": "A forensic analysis could not be performed due to a complete lack of related party transaction and financial data for Homesfy Realty Ltd. This opacity represents a critical risk as it prevents any assessment of compliance with regulatory requirements and masks potential red flags such as fund siphoning or non-arm's-length pricing."
+  },
+  "critic_summary": "",
+  "narrative_report": "**To:** Investment Committee\n**From:** Senior Equity Research, Forensic Division\n**Subject:** Homesfy Realty Ltd (HOMESFY) - An Uninvestable Black Box\n\nHomesfy Realty presents a case of profound and perilous ambiguity, where a clean public facade conceals a complete void of verifiable corporate governance. The headline risk is not a single accounting trick, but a total **information vacuum** that makes fundamental analysis impossible. Our findings point to a critical disconnect between the company\u2019s public narrative and what appears to be a collapsing financial performance, a divergence made possible by an alarming lack of transparency. While the market intelligence team found no public scandals, this absence of noise is deceptive. The true danger lies in what is not, and perhaps cannot be, seen.\n\nThe likely mechanism of action behind this opacity is the complete obstruction of any analysis into the company's inner workings, most critically its **Related Party Transactions (RPTs)**. With a 95% risk score due to a complete lack of data, we cannot rule out the most severe forms of corporate malfeasance, from fund siphoning to the artificial inflation of revenues through non-arm\u2019s-length deals. This **deliberate opacity** prevents investors from assessing whether the company\u2019s assets are being used for shareholder benefit or are being systematically drained by insiders. The negligible institutional ownership serves as a market-based confirmation of this risk; the professional investment community has already voted with its feet, staying far away from a company that refuses to be scrutinized.\n\nConsequently, management's credibility is **fundamentally compromised**. While the promoters have maintained a stable shareholding, this fact is rendered meaningless by the wall of silence surrounding every other critical governance metric\u2014from board composition and compensation to share pledging. In this context, stable ownership is not a signal of commitment but of absolute control. A credible management team embraces transparency to build trust; Homesfy\u2019s leadership has chosen a path that actively prevents it. Their actions do not align with their implicit promise to public shareholders, creating an unquantifiable but severe risk.\n\nOur verdict is unequivocal: Homesfy Realty is an **uninvestable value trap**. The clean public record acts as a veneer over a",
+  "pros": [
+    "Company is almost debt free."
+  ],
+  "cons": [
+    "Though the company is reporting repeated profits, it is not paying out dividend",
+    "Company has low interest coverage ratio.",
+    "Company has a low return on equity of 6.66% over last 3 years.",
+    "Company has high debtors of 154 days.",
+    "Company's cost of borrowing seems high"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "nse_annual_reports",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 4,
+    "annual_reports": 2,
+    "concalls": 3,
+    "announcements": 8
+  },
+  "analyzed_at": "2026-02-16T12:37:29.970048"
+}

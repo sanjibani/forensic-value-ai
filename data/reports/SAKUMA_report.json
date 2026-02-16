@@ -1,0 +1,180 @@
+{
+  "ticker": "SAKUMA",
+  "company_name": "Sakuma Exports Ltd",
+  "sector": "Services",
+  "market_cap": "303",
+  "overall_risk_score": 54.2,
+  "risk_level": "MODERATE",
+  "findings_count": 5,
+  "critical_findings": 2,
+  "high_findings": 1,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "promoter_shareholding",
+      "title": "Massive and Abrupt Promoter Stake Dilution",
+      "description": "<ul><li><b>Significant Stake Sale:</b> Promoters drastically reduced their shareholding from 61.87% in March 2024 to 46.29% in June 2024, a substantial drop of 15.58% in a single quarter.</li><li><b>Indication of Exit:</b> Such a large and sudden sale by the core ownership group is a critical red flag. It strongly suggests a lack of confidence in the company's future prospects or an attempt to cash out at a perceived high valuation.</li><li><b>Loss of 'Skin in the Game':</b> While the remaining stake is still significant, the precipitous drop erodes investor confidence and signals a major shift in the promoters' commitment to the company.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "46.29%",
+          "benchmark": "61.87%",
+          "period": "Jun 2024 vs Mar 2024"
+        },
+        {
+          "metric": "Promoter Stake Change (QoQ)",
+          "value": "-15.58%",
+          "benchmark": "Should be stable or show creeping acquisition. Large decreases are negative.",
+          "period": "Q1 FY25"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "shareholder_base_analysis",
+      "title": "Explosive Growth in Retail Shareholder Base Coinciding with Promoter Sale",
+      "description": "<ul><li><b>Retail Distribution:</b> The number of shareholders more than quadrupled from 56,354 in March 2024 to over 220,000 by March 2025. The sharpest jump occurred in June 2024, perfectly coinciding with the promoter stake sale.</li><li><b>Pattern of Distribution:</b> This pattern, where promoter shares are offloaded to a rapidly expanding base of smaller (likely retail) investors, is a classic characteristic of a 'distribution' phase, often following a sharp price run-up.</li><li><b>Increased Volatility Risk:</b> A fragmented and largely retail shareholder base can lead to higher stock price volatility and indicates that institutional investors are not absorbing the promoter's stake.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Number of Shareholders",
+          "value": "1,02,989",
+          "benchmark": "56,354",
+          "period": "Jun 2024 vs Mar 2024"
+        },
+        {
+          "metric": "Public Shareholding",
+          "value": "53.09%",
+          "benchmark": "37.92%",
+          "period": "Jun 2024 vs Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "data_availability",
+      "title": "Significant Gaps in Governance Data",
+      "description": "<ul><li><b>Missing Information:</b> The provided dataset lacks crucial information required for a comprehensive governance assessment.</li><li><b>Key Data Gaps:</b> There is no data available on Promoter Share Pledging, Board of Directors composition (including independence), Executive Compensation, or details of Related Party Transactions.</li><li><b>Inability to Assess:</b> Without this data, it is impossible to evaluate key governance aspects like board oversight, reasonableness of compensation, and potential conflicts of interest arising from related parties. This opacity is a governance concern in itself.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Pledging Data",
+          "value": "Not Available",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        },
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Available",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data Integrity",
+      "title": "Critical Data Deficiency - Analysis Impossible",
+      "description": "<ul><li><b>Complete Data Void:</b> No related party transaction data, financial summaries, corporate structure details, or web search results were provided for Sakuma Exports Ltd.</li><li><b>Analysis Blocked:</b> The absence of data makes it impossible to perform any of the requested forensic analyses, including:<ul><li>Calculating RPT volume and materiality (% of revenue/net worth).</li><li>Analyzing transaction types (sales, loans, guarantees).</li><li>Assessing pricing for arm's-length compliance.</li><li>Identifying structural red flags like circular transactions or offshore entities.</li></ul></li><li><b>Regulatory Compliance Unverifiable:</b> Without data, it is not possible to verify compliance with Ind-AS 24, SEBI LODR Chapter VI, or Companies Act 2013 Section 188.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All RPTs, Loans, Guarantees, and Financials",
+          "amount": "N/A",
+          "party": "All Related Parties",
+          "concern": "The entire input dataset for analysis was empty, preventing any form of validation or risk assessment."
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Data Availability for Analysis",
+        "value": "0%"
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Absence of Red Flags",
+      "title": "No Publicly Available Evidence of Major Red Flags",
+      "description": "<ul><li><b>Regulatory & Legal:</b> Searches for terms like 'fraud', 'lawsuit', 'raid', and 'SEBI investigation' did not yield any relevant adverse findings against Sakuma Exports Ltd.</li><li><b>Employee & Customer Sentiment:</b> No significant negative employee reviews concerning 'fake work' or 'scam' culture were found. Similarly, no major customer complaints were discovered in consumer forums.</li><li><b>Management Integrity:</b> A search for promoter 'political connections' did not return any results, suggesting no obvious politically exposed persons are associated with the company's management in the public domain.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "source": "Web Search Query: \"Sakuma Exports Ltd\" fraud lawsuit raid SEBI investigation",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Sakuma Exports Ltd\" employee reviews fake work culture scam",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Sakuma Exports Ltd\" customer complaints consumer forum",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Sakuma Exports Ltd\" promoter political connection",
+          "date": null,
+          "snippet": "No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 90.0,
+    "rpt_risk": 100.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 15 column 10 (char 1055)",
+    "management": "Management integrity and governance quality at Sakuma Exports are assessed as extremely poor. The massive and abrupt sale of a 15.58% stake by promoters, distributed to a rapidly growing retail shareholder base, is a critical red flag that severely undermines confidence in management's belief in their own company.",
+    "rpt": "A forensic RPT analysis for Sakuma Exports Ltd. could not be performed due to a complete lack of input data. This absence of information is a critical red flag, as transparency is fundamental to assessing RPT risks. The risk is assessed as maximum by default until comprehensive data is provided for evaluation."
+  },
+  "critic_summary": "",
+  "pros": [
+    "Company has reduced debt.",
+    "Company is almost debt free.",
+    "Stock is trading at 0.43 times its book value",
+    "Company has been maintaining a healthy dividend payout of 20.0%"
+  ],
+  "cons": [
+    "The company has delivered a poor sales growth of -2.10% over past five years.",
+    "Company has a low return on equity of 4.89% over last 3 years.",
+    "Earnings include an other income of Rs.10.3 Cr.",
+    "Debtor days have increased from 55.2 to 67.0 days.",
+    "Promoter holding has decreased over last 3 years: -15.6%"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 4,
+    "annual_reports": 0,
+    "concalls": 0,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T11:21:42.105742"
+}

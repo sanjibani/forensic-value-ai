@@ -1,0 +1,182 @@
+{
+  "ticker": "ASIANENE",
+  "company_name": "Asian Energy Services Ltd",
+  "sector": "Energy",
+  "market_cap": "1,362",
+  "overall_risk_score": 23.6,
+  "risk_level": "LOW",
+  "findings_count": 6,
+  "critical_findings": 1,
+  "high_findings": 2,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Significant Information Gaps in Governance Data",
+      "description": "<ul><li><b>Critical Data Unavailable:</b> The provided dataset lacks crucial information required for a comprehensive governance assessment.</li><li><b>Missing Pledging Data:</b> There is no information on promoter share pledging. The absence of this data prevents assessment of a key financial risk, as high pledging can lead to forced selling and stock price volatility.</li><li><b>No Board or Committee Details:</b> Information on board composition, director independence, tenure, and committee structure (especially Audit Committee) is missing. This makes it impossible to evaluate the board's oversight quality and compliance with SEBI LODR regulations.</li><li><b>Compensation and RPT Opacity:</b> Data on executive compensation and related party transactions (RPTs) was not provided. This opacity is a major red flag, as it hides potential conflicts of interest and unreasonable siphoning of funds.</li></ul>",
+      "severity": "high",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "Pledging Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "N/A"
+        },
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "N/A"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "shareholding_pattern",
+      "title": "Volatile Promoter Shareholding with Recent Reduction",
+      "description": "<ul><li><b>Promoter Stake Reduction:</b> Promoter holding decreased from a high of 63.07% in Sep 2023 to 58.52% in Mar 2024, a reduction of 4.55 percentage points over two quarters.</li><li><b>Unexplained Volatility:</b> The promoter stake shows significant fluctuation, which can create uncertainty for minority shareholders. While the holding remains above 50%, the recent sale without a clear public rationale is a concern.</li><li><b>Creeping Acquisition Pattern:</b> The holding increased from 58.52% in June 2024 to 60.97% in September 2024, indicating promoters are actively trading their stake.</li></ul>",
+      "severity": "medium",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "58.52%",
+          "benchmark": "63.07%",
+          "period": "Mar 2024 vs Sep 2023"
+        },
+        {
+          "metric": "Promoter Holding Change (2 Quarters)",
+          "value": "-4.55%",
+          "benchmark": "Stable or increasing holding is preferred",
+          "period": "Sep 2023 - Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "shareholding_pattern",
+      "title": "Negligible Domestic Institutional Ownership",
+      "description": "<ul><li><b>Lack of DII Confidence:</b> The shareholding by Domestic Institutional Investors (DIIs) has been consistently 0.00% for almost the entire analysis period, with only a minuscule presence appearing in mid-2025 projections.</li><li><b>Negative Signal:</b> The complete absence of interest from professional domestic fund managers, who typically conduct deep due diligence, is a significant negative signal regarding the company's business quality, growth prospects, or governance standards.</li><li><b>FII Interest Waning:</b> While FIIs showed a brief spike in interest (peaking at 4.27% in Mar 2024), their holding has since declined, suggesting their interest may have been short-term or speculative.</li></ul>",
+      "severity": "medium",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "DII Shareholding",
+          "value": "0.00%",
+          "benchmark": "> 5% for well-regarded companies",
+          "period": "Mar 2023 - Mar 2025 (projected)"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "shareholding_pattern",
+      "title": "Declining Retail Shareholder Base",
+      "description": "<ul><li><b>Erosion of Shareholder Base:</b> The number of shareholders declined by over 25% in one year, from 22,608 in March 2023 to 16,524 in March 2024.</li><li><b>Potential Loss of Confidence:</b> Such a sharp drop indicates a significant exit by retail investors, which could be due to poor performance, lack of communication, or governance concerns. While the number has started to recover, the initial sharp fall is a point of concern.</li></ul>",
+      "severity": "low",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "Number of Shareholders",
+          "value": "16,524",
+          "benchmark": "22,608",
+          "period": "Mar 2024 vs Mar 2023"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data_Integrity_Issue",
+      "title": "Critical Data Deficiency: No Transactional or Financial Data Provided",
+      "description": "<ul><li><b>Missing Data:</b> The analysis could not be performed as all essential data points were missing from the input.</li><li><b>Specifics:</b> The provided data contained empty objects/arrays for 'related_parties', 'rpt_transactions', 'loans_advances', 'guarantees', and 'corporate_structure'.</li><li><b>Financial Context Absent:</b> Key financial metrics such as 'revenue' and 'net_worth' were marked as 'N/A', making it impossible to assess the materiality of any potential transactions.</li><li><b>Impact:</b> Without this foundational data, it is impossible to conduct any of the requested forensic analyses, including RPT volume assessment, transaction type analysis, pricing evaluation, or identification of structural red flags.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All RPT and Financial Data",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "The entire dataset required for forensic analysis is empty. No conclusions can be drawn about the company's RPT practices."
+        }
+      ],
+      "industry_benchmark": null,
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Data Integrity Issue",
+      "title": "Irrelevant Search Results Provided for Analysis",
+      "description": "<ul><li><b>Data Mismatch:</b> The provided web search results are completely unrelated to the target company, Asian Energy Services Ltd (ASIANENE). The search queries appear to have returned results based on the keyword 'Asian' rather than the specific company name.</li><li><b>Irrelevant Content:</b> The search results consist of discussions on the demographic term 'Asian' from zhihu.com, a downloads page for a gaming website (aslain.com), and a query about a medical journal.</li><li><b>Analysis Impeded:</b> Due to the complete lack of relevant information, no assessment of management integrity, employee sentiment, legal risks, or media perception could be conducted for Asian Energy Services Ltd.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "source": "https://www.zhihu.com/question/19698050",
+          "date": "2011-06-05",
+          "snippet": "\u4e3a\u4ec0\u4e48\u8bf4\u5230 Asian \u9ed8\u8ba4\u4e3a\u4e1c\u4e9a\u4eba\uff1f - \u77e5\u4e4e: Jun 5, 2011 \u00b7 \u4ee5\u4e0b\u8d44\u6599\u6839\u636e\u7ef4\u57fa\u767e\u79d1\u6574\u7406\uff1a 1\uff09\u7f8e\u56fd \u8bf4Asian\u7684\u65f6\u5019\uff0c\u7f8e\u56fd\u4eba\u7b2c\u4e00\u53cd\u5e94\u662f\u4e9a\u592a\u5730\u533a\u7684\u4eba\uff0c\u5305\u62ec\u4e1c\u4e9a\u548c\u4e1c\u5357\u4e9a\uff0c\u5982\u4e2d\u65e5\u97e9\u3001\u8d8a\u5357\u3001\u83f2\u5f8b\u5bbe\u3001\u9a6c\u6765\u897f\u4e9a\u3001\u5370\u5c3c\u3002"
+        },
+        {
+          "source": "https://aslain.com/index.php?/forum/72-downloads/",
+          "date": null,
+          "snippet": "Downloads - Aslain.com: 3 days ago \u00b7 Download mods and addons for World of Tanks, including modpacks, tools, and custom features."
+        },
+        {
+          "source": "https://www.zhihu.com/question/1905329093953713630",
+          "date": "2025-05-12",
+          "snippet": "\u5982\u4f55\u770b\u5f85Asian journal of surgery\u4e0d\u518d\u88abpubmed\u6536\u5f55?: May 12, 2025 \u00b7 \u5982\u4f55\u770b\u5f85Asian journal of surgery\u4e0d\u518d\u88abpubmed\u6536\u5f55? \u4ecepubmed\u68c0\u7d22\u53d1\u73b0\uff0c\u81ea24-12\u6708\u4e2d\u65ec\u4ee5\u540e\u7684\u8bba\u6587\u672a\u88abpubmed\u6536\u5f55..."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 75.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 95 column 6 (char 5266)",
+    "management": "The assessment of Asian Energy Services is severely hampered by a significant lack of transparency, with no data provided on promoter pledging, board structure, or related party transactions. Observable red flags include a volatile promoter stake with recent reductions and a complete absence of ownership by domestic institutional investors, signaling low confidence from professional fund managers. These factors result in a very low management integrity and governance score.",
+    "rpt": "A forensic analysis of Asian Energy Services Ltd's related party transactions could not be performed due to a complete lack of input data. Key financial metrics, transaction details, and corporate structure information were all missing, making it impossible to assess RPT volume, materiality, pricing, or potential red flags. The risk score of 0 reflects the absence of identified findings, not an affirmation of low risk."
+  },
+  "critic_summary": "",
+  "pros": [
+    "Company is expected to give good quarter",
+    "Debtor days have improved from 231 to 176 days."
+  ],
+  "cons": [
+    "Stock is trading at 3.11 times its book value",
+    "Company has a low return on equity of 3.88% over last 3 years.",
+    "Dividend payout has been low at 3.54% of profits over last 3 years",
+    "Company has high debtors of 176 days."
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 6,
+    "annual_reports": 0,
+    "concalls": 2,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T11:29:08.939344"
+}

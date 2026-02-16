@@ -1,0 +1,227 @@
+{
+  "ticker": "AARTIPHARM",
+  "company_name": "Aarti Pharmalabs Ltd",
+  "sector": "Healthcare",
+  "market_cap": "6,451",
+  "overall_risk_score": 32.2,
+  "risk_level": "LOW",
+  "findings_count": 9,
+  "critical_findings": 1,
+  "high_findings": 3,
+  "findings": [
+    {
+      "agent_name": "forensic",
+      "finding_type": "Methodology Limitation",
+      "title": "Incomplete Financial Data Restricts Comprehensive Analysis",
+      "description": "<ul><li><b>Critical Data Missing:</b> The analysis is based solely on Profit & Loss statement data. The absence of the Balance Sheet and Cash Flow Statement makes a full forensic audit impossible.</li><li><b>Unverifiable Areas:</b> Key areas of forensic analysis, including cash flow quality (CFO/PAT), working capital management (Receivable/Inventory Days), and capitalization policies (Capex vs. Depreciation), cannot be assessed.</li><li><b>Conclusion Limitation:</b> Findings are indicative based on P&L trends and require verification with complete financial statements.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Available Data",
+          "value": "Profit & Loss Statement Only",
+          "benchmark": "Required: P&L, Balance Sheet, Cash Flow Statement",
+          "period": "All"
+        }
+      ],
+      "industry_benchmark": null,
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Capital Structure & Expenditure",
+      "title": "Accelerated Depreciation and Interest Costs in TTM Period",
+      "description": "<ul><li><b>Significant Cost Increase:</b> The Trailing Twelve Months (TTM) data shows a substantial jump in both Depreciation and Interest expenses compared to the full fiscal year 2024.</li><li><b>Depreciation Spike:</b> Depreciation increased to \u20b999 Cr in TTM from \u20b973 Cr in FY2024, implying a large block of assets was capitalized and began depreciating recently.</li><li><b>Interest Expense Surge:</b> Interest costs more than doubled to \u20b937 Cr in TTM from \u20b917 Cr in FY2024, strongly suggesting significant new debt was raised, likely to fund the aforementioned capital expenditure.</li><li><b>Implication:</b> This indicates a major, debt-funded capex cycle. The future profitability will depend heavily on the revenue-generating capacity of these new assets.</li></ul>",
+      "severity": "medium",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Depreciation (Cr)",
+          "value": "99",
+          "benchmark": "73 (FY24)",
+          "period": "TTM"
+        },
+        {
+          "metric": "Interest (Cr)",
+          "value": "37",
+          "benchmark": "17 (FY24)",
+          "period": "TTM"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Debt-Funded Capex",
+        "peer_avg": "Common in growing pharma/specialty chemical companies, but the magnitude and timing require scrutiny of asset turnover and return on capital."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Earnings Quality",
+      "title": "Sustained Margin Expansion Amidst Revenue Volatility",
+      "description": "<ul><li><b>Improving Profitability:</b> Operating Profit Margin (OPM) has shown a consistent and strong upward trend, rising from 17% in FY2022 to 23% in the TTM period.</li><li><b>Margin vs. Sales:</b> Notably, the margin expansion continued even as sales growth stalled. For instance, TTM sales (\u20b91,801 Cr) are lower than FY2024 sales (\u20b91,853 Cr), yet the TTM OPM (23%) is significantly higher than FY2024 OPM (21%).</li><li><b>Potential Drivers:</b> This could be due to positive factors like a richer product mix or cost efficiencies. However, without a Balance Sheet, the possibility of aggressive accounting policies (e.g., deferring costs) cannot be ruled out and warrants further investigation.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "OPM %",
+          "value": "23%",
+          "benchmark": "21% (FY24), 18% (FY23)",
+          "period": "TTM"
+        },
+        {
+          "metric": "Sales Growth (FY24 vs FY23)",
+          "value": "-4.7%",
+          "benchmark": "Positive growth is ideal",
+          "period": "FY2024"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "OPM %",
+        "peer_avg": "Varies widely based on product specialization; 20%+ is generally strong for specialty chemical/pharma API players."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Other Income Quality",
+      "title": "Low Reliance on Non-Operating Income",
+      "description": "<ul><li><b>Core Earnings Driven:</b> Profits are primarily driven by core business operations, not by other non-operating income.</li><li><b>Minimal Contribution:</b> In FY2024, 'Other Income' of \u20b95 Cr constituted only 1.7% of the 'Profit before tax' of \u20b9300 Cr. This is well below the 15% threshold that typically triggers concern.</li><li><b>Indication of Quality:</b> This low reliance on other income is a positive indicator of high-quality, sustainable earnings from the company's main business activities.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Other Income as % of PBT",
+          "value": "1.7%",
+          "benchmark": "< 15%",
+          "period": "FY2024"
+        },
+        {
+          "metric": "Other Income as % of PBT",
+          "value": "0.8%",
+          "benchmark": "< 15%",
+          "period": "FY2023"
+        }
+      ],
+      "industry_benchmark": null,
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Consistent Promoter Stake Dilution",
+      "description": "<ul><li><b>Pattern of Sale:</b> Promoter shareholding shows a consistent declining trend, reducing from a peak of 46.46% to a projected 42.88%. This represents a significant reduction of over 3.5 percentage points.</li><li><b>Reduced Skin in the Game:</b> A steady decrease in promoter ownership can signal a reduction in their long-term commitment or confidence in the company's future prospects.</li><li><b>Absorption by Public:</b> The shares offloaded by promoters appear to be absorbed primarily by the public, whose holding increases from 32.64% to over 41%. A shift in ownership from 'strong hands' (promoters) to 'weak hands' (retail) is often viewed negatively.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "42.88% (Sep 2025)",
+          "benchmark": "Peak of 46.46% (Dec 2023 - Jun 2024)",
+          "period": "Dec 2023 - Sep 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Significant Reduction in Domestic Institutional Holding",
+      "description": "<ul><li><b>DII Exit:</b> Domestic Institutional Investors (DIIs) have substantially reduced their stake from a high of 13.68% in March 2023 to a projected low of 6.95% by September 2025.</li><li><b>Loss of Confidence:</b> A sharp and sustained exit by informed institutional investors is a strong negative signal, suggesting potential concerns about the company's performance, valuation, or governance.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "DII Shareholding",
+          "value": "6.95% (Sep 2025)",
+          "benchmark": "13.68% (Mar 2023)",
+          "period": "Mar 2023 - Sep 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "data_gap",
+      "title": "Critical Governance and Pledging Data Unavailable",
+      "description": "<ul><li><b>No Pledging Data:</b> The provided information contains no data on promoter share pledging. This is a critical blind spot, as high or increasing pledge levels can indicate financial stress for the promoters and pose a risk to the stock price.</li><li><b>Missing Board & RPT Info:</b> No data was available to assess board independence, committee composition, related party transactions (RPTs), or executive compensation.</li><li><b>Incomplete Picture:</b> Without this information, a comprehensive assessment of corporate governance quality and management integrity is impossible. Key risks related to financial dealings and board oversight cannot be evaluated.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Pledging Data",
+          "value": "Not Provided",
+          "benchmark": "Data is required for risk assessment",
+          "period": "N/A"
+        },
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Provided",
+          "benchmark": "Data is required for governance analysis",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data Insufficiency",
+      "title": "No RPT Data Provided for Analysis",
+      "description": "<ul><li><b>Data Missing:</b> The input data for Aarti Pharmalabs Ltd was empty. All fields, including related parties, transactions, loans, and financials, were marked as 'N/A' or contained empty arrays/objects.</li><li><b>Analysis Impeded:</b> Without specific transaction details, financial figures (revenue, net worth), and corporate structure information, a forensic analysis of related party transactions is not possible.</li><li><b>Required Information:</b> To perform the requested analysis, detailed disclosures from the company's annual reports are necessary, including names of related parties, nature of relationships, transaction types, amounts for the period, and outstanding balances.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [],
+      "industry_benchmark": {
+        "Healthcare Sector RPT as % of Revenue (Median)": "Typically 5-15%, but cannot be compared."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "market_intel_category",
+      "title": "Absence of Significant Negative Public Information",
+      "description": "<ul><li><b>Regulatory & Legal Scrutiny:</b> Targeted searches for terms like 'fraud', 'lawsuit', 'raid', and 'SEBI investigation' yielded no relevant results. This suggests a lack of publicly available information regarding significant legal or regulatory actions against the company.</li><li><b>Management & Promoter Integrity:</b> No evidence of promoter-related fraud, scams, or significant political connections was found in the provided search results, indicating a clean public profile for the management team.</li><li><b>Stakeholder Sentiment:</b> Queries for negative employee reviews (e.g., 'fake work culture', 'scam') and adverse customer complaints also returned no findings. This points to an absence of widespread, publicly documented grievances from employees or customers.</li></ul>",
+      "severity": "low",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "source": "Provided Web Search Results",
+          "date": null,
+          "snippet": "Queries for 'Aarti Pharmalabs Ltd fraud lawsuit raid SEBI investigation', 'employee reviews fake work culture scam', 'customer complaints consumer forum', and 'promoter political connection' all returned 'No relevant results found'."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 35.0,
+    "management_risk": 65.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "The forensic analysis is severely constrained by the lack of Balance Sheet and Cash Flow data. Based on the P&L, Aarti Pharmalabs exhibits strong operational performance with expanding margins, and earnings quality appears high. However, a recent and significant debt-funded capital expenditure cycle, evidenced by spiking TTM interest and depreciation costs, introduces operational risk and requires close monitoring of future returns on these new assets.",
+    "management": "The assessment reveals significant concerns based on available shareholding data. A consistent pattern of promoter stake dilution, coupled with a sharp decline in domestic institutional ownership, suggests eroding confidence from key stakeholders. A comprehensive governance analysis is not possible due to the lack of critical data on share pledging, board structure, and related party transactions.",
+    "rpt": "Assessment not possible. The provided dataset for Aarti Pharmalabs Ltd was empty, containing no specific related party transaction data, financial summaries, or corporate structure details. A forensic analysis cannot be conducted without this information."
+  },
+  "critic_summary": "",
+  "pros": [],
+  "cons": [
+    "Company has a low return on equity of 13.6% over last 3 years."
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 6,
+    "annual_reports": 0,
+    "concalls": 6,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T09:52:08.806360"
+}

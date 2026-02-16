@@ -1,0 +1,272 @@
+{
+  "ticker": "ACCELYA",
+  "company_name": "Accelya Solutions India Ltd",
+  "sector": "Information Technology",
+  "market_cap": "1,752",
+  "overall_risk_score": 32.5,
+  "risk_level": "LOW",
+  "findings_count": 9,
+  "critical_findings": 1,
+  "high_findings": 2,
+  "findings": [
+    {
+      "agent_name": "forensic",
+      "finding_type": "Cash Flow vs Reported Profits",
+      "title": "Unsustainable Dividend Payout Policy",
+      "description": "<ul><li><b>Excessive Payouts:</b> The company has a recurring pattern of declaring dividend payout ratios significantly exceeding 100% of its net profit. This was observed in FY21 (184%) and FY22 (121%), with projections indicating a continuation of this trend.</li><li><b>Depletion of Reserves:</b> Paying out more in dividends than earned is unsustainable and leads to a depletion of retained earnings and cash reserves. This prioritizes short-term cash distribution over reinvestment for future growth or building a financial buffer for downturns.</li><li><b>Governance Concern:</b> This policy may indicate a strategy to upstream maximum cash to the parent/majority shareholders, potentially at the expense of minority shareholders' long-term interests and the company's financial health.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Dividend Payout %",
+          "value": "184%",
+          "benchmark": "Should be sustainably < 100%",
+          "period": "Jun 2021"
+        },
+        {
+          "metric": "Dividend Payout %",
+          "value": "121%",
+          "benchmark": "Should be sustainably < 100%",
+          "period": "Jun 2022"
+        },
+        {
+          "metric": "Dividend Payout % (Projected)",
+          "value": "103%",
+          "benchmark": "Should be sustainably < 100%",
+          "period": "Jun 2024"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Sustainable Dividend Payout %",
+        "peer_avg": "Typically 40-70% for mature IT companies"
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Other Income Quality",
+      "title": "High Volatility and Significant Negative Other Income",
+      "description": "<ul><li><b>Erratic Contribution:</b> 'Other Income' is highly volatile, swinging from a significant positive contribution (21 Cr in FY23) to a large negative figure (-24 Cr projected for FY24).</li><li><b>Earnings Obscurity:</b> This volatility makes it difficult to assess the quality and sustainability of the company's core earnings. Large swings in non-operating items can obscure the true performance of the underlying business.</li><li><b>Potential Source:</b> The negative value likely represents significant mark-to-market losses on investments or, more commonly for an IT exporter, substantial foreign exchange losses. This requires further investigation via annual reports to understand the nature of these losses.</li></ul>",
+      "severity": "high",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Other Income",
+          "value": "-24",
+          "benchmark": "Should be stable and positive",
+          "period": "Jun 2024 (Projected)"
+        },
+        {
+          "metric": "Other Income",
+          "value": "21",
+          "benchmark": "N/A",
+          "period": "Jun 2023"
+        },
+        {
+          "metric": "Other Income as % of Profit Before Tax (FY24 Proj.)",
+          "value": "-17.6%",
+          "benchmark": "Typically < 10-15% and positive",
+          "period": "Jun 2024 (Projected)"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Other Income as % of PBT",
+        "peer_avg": "Generally 1-5%"
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Capitalization Policies",
+      "title": "Abrupt Structural Shift in Depreciation and Interest Expense",
+      "description": "<ul><li><b>Sudden Increase:</b> Depreciation expense abruptly doubled from 17 Cr in FY19 to 32 Cr in FY20 and has remained elevated since.</li><li><b>Emergence of Interest:</b> Concurrently, interest expense, which was zero in prior years, appeared in FY20 at 6 Cr.</li><li><b>Probable Cause (Ind AS 116):</b> This simultaneous change strongly indicates the adoption of the Ind AS 116 lease accounting standard, effective from April 1, 2019. This standard requires companies to capitalize operating leases on the balance sheet as 'Right-of-Use' assets (which are then depreciated) and corresponding lease liabilities (which incur interest expense).</li><li><b>Impact on Comparability:</b> While this is a mandatory accounting change and not an irregularity, it fundamentally alters the P&L structure. It reduces Operating Profit (as lease rentals are replaced by depreciation & interest) and makes pre-FY20 and post-FY20 profitability metrics (like OPM and PBT) not directly comparable without adjustment.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "Depreciation",
+          "value": "32",
+          "benchmark": "17 (Previous Year)",
+          "period": "Jun 2020"
+        },
+        {
+          "metric": "Interest",
+          "value": "6",
+          "benchmark": "0 (Previous Year)",
+          "period": "Jun 2020"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Impact of Ind AS 116",
+        "peer_avg": "Similar structural changes seen across industries post-2019"
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "High and Stable Promoter Shareholding with Zero Pledge",
+      "description": "<ul><li><b>Promoter Holding:</b> The promoter, Accelya Holding World S.L.U. (ultimately owned by PE firm Vista Equity Partners), holds a high and stable 74.66% stake. This is just under the SEBI-mandated maximum of 75%, indicating strong conviction and control.</li><li><b>Share Pledging:</b> There is zero promoter share pledging. This is a significant positive, eliminating the risk of forced selling of promoter shares due to margin calls.</li><li><b>Holding Trend:</b> The shareholding has remained unchanged over the last several quarters, suggesting a stable, long-term strategic holding rather than speculative trading.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "74.66%",
+          "benchmark": "<75%",
+          "period": "Mar 2023 - Mar 2024"
+        },
+        {
+          "metric": "Promoter Share Pledge",
+          "value": "0%",
+          "benchmark": "0%",
+          "period": "Latest"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Board Composition Falls Short of Independence Norms",
+      "description": "<ul><li><b>Independence Ratio:</b> The Board comprises 7 directors, of which 3 are Independent Directors. This constitutes an independence ratio of ~43%.</li><li><b>Regulatory Benchmark:</b> As per SEBI LODR regulations, if the chairperson of the board is a non-executive director but represents the promoter, at least half (50%) of the board must be independent.</li><li><b>Governance Gap:</b> The current Chairman is a representative of the promoter (Vista Equity Partners). Therefore, the board's independence at 43% does not meet the 50% requirement, representing a governance gap.</li></ul>",
+      "severity": "medium",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Independent Director Ratio",
+          "value": "42.8% (3 out of 7)",
+          "benchmark": ">=50%",
+          "period": "FY 2023-24"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Material Related Party Transactions with Parent Group",
+      "description": "<ul><li><b>Nature of Transactions:</b> The company engages in recurring transactions with its holding company and other entities within the promoter group (Vista Equity Partners' portfolio). These primarily involve availing IT infrastructure, sales, and marketing services.</li><li><b>Potential for Value Leakage:</b> While these transactions are disclosed and audited, their material nature creates a potential risk for minority shareholders if the services are not priced at a fair arm's length basis. This structure warrants continuous scrutiny.</li><li><b>Promoter Type:</b> This is a common practice for companies owned by global private equity firms, which seek to integrate portfolio companies into their operational ecosystem.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "Payments to Related Parties for Services",
+          "value": "Recurring and material (e.g., ~\u20b930 Cr in FY23)",
+          "benchmark": "Arm's length pricing",
+          "period": "Annual Reports"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Shareholder-Friendly Capital Allocation Policy",
+      "description": "<ul><li><b>Dividend Payout:</b> Accelya has a consistent track record of rewarding shareholders with high dividends. The dividend payout ratio is healthy, reflecting the company's strong cash generation and mature business model.</li><li><b>Promoter Alignment:</b> This policy aligns the interests of the PE promoter (focused on cash extraction) with those of minority shareholders.</li><li><b>Capital Structure:</b> The company is debt-free and has not diluted equity for fundraising, indicating strong internal cash flow generation to fund operations and growth.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Dividend Payout Ratio",
+          "value": "~54%",
+          "benchmark": "Consistent & Sustainable",
+          "period": "FY 2022-23"
+        },
+        {
+          "metric": "Debt to Equity Ratio",
+          "value": "0.00",
+          "benchmark": "Low",
+          "period": "Latest"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data Integrity Issue",
+      "title": "Insufficient Data for RPT Analysis",
+      "description": "<ul><li><b>Data Missing:</b> The provided input for Accelya Solutions India Ltd contained no specific related party transaction data, financial summaries (revenue, net worth), or corporate structure details.</li><li><b>Analysis Blocked:</b> Without this fundamental information, a forensic analysis of related party transactions cannot be performed.</li><li><b>Required Information:</b> To proceed, detailed data is needed on transaction types, amounts, involved parties, loan schedules, guarantee details, and financial statements.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All RPTs",
+          "amount": "N/A",
+          "party": "All Related Parties",
+          "concern": "The entire dataset for RPTs, financials, and corporate structure was empty or marked as 'N/A'."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "market_intel_category",
+      "title": "Absence of Significant Publicly Available Red Flags",
+      "description": "<ul><li><b>Legal & Regulatory:</b> Searches for terms like 'fraud', 'lawsuit', 'raid', and 'SEBI investigation' did not yield any relevant adverse findings, suggesting a clean regulatory record in the public domain.</li><li><b>Employee & Customer Sentiment:</b> No significant negative employee reviews concerning 'fake work', 'scam', or toxic culture were found. Similarly, there was no evidence of widespread customer complaints on public consumer forums.</li><li><b>Management Integrity:</b> No publicly available information was found linking the company's promoters to political connections or other related integrity risks.</li></ul>",
+      "severity": "low",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: 'Accelya Solutions India Ltd' fraud lawsuit raid SEBI investigation. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: 'Accelya Solutions India Ltd' employee reviews fake work culture scam. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: 'Accelya Solutions India Ltd' customer complaints consumer forum. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search",
+          "date": null,
+          "snippet": "Query: 'Accelya Solutions India Ltd' promoter political connection. Result: No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 65.0,
+    "management_risk": 25.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Accelya Solutions exhibits strong, albeit cyclically affected, operating margins. However, the forensic analysis raises two significant red flags: an unsustainable dividend policy with payouts frequently exceeding 100% of profits, and highly volatile 'Other Income' which includes a large projected loss for FY24, obscuring earnings quality. These issues point towards aggressive capital allocation and potential risks from non-operating activities rather than irregularities in core revenue or expense recognition.",
+    "management": "Management quality is professional, steered by its global private equity promoter, Vista Equity Partners. This is reflected in strong operational metrics, zero promoter pledging, and a generous dividend policy. However, governance quality is constrained by a board that does not meet SEBI's independence norms and the presence of material related-party transactions with the parent group.",
+    "rpt": "No RPT risk assessment can be provided for Accelya Solutions India Ltd as the necessary input data was not supplied. The analysis is blocked pending receipt of complete transaction and financial information."
+  },
+  "critic_summary": "",
+  "pros": [
+    "Stock is providing a good dividend yield of 7.60%.",
+    "Company has a good return on equity (ROE) track record: 3 Years ROE 44.0%",
+    "Company has been maintaining a healthy dividend payout of 94.7%"
+  ],
+  "cons": [
+    "The company has delivered a poor sales growth of 5.11% over past five years."
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 2,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T09:55:23.298814"
+}

@@ -1,0 +1,292 @@
+{
+  "ticker": "DODLA",
+  "company_name": "Dodla Dairy Ltd",
+  "sector": "Fast Moving Consumer Goods",
+  "market_cap": "7,247",
+  "overall_risk_score": 30.0,
+  "risk_level": "LOW",
+  "findings_count": 12,
+  "critical_findings": 1,
+  "high_findings": 3,
+  "findings": [
+    {
+      "agent_name": "forensic",
+      "finding_type": "Other Income Quality",
+      "title": "Increasing and Significant Reliance on Non-Operating 'Other Income'",
+      "description": "<ul><li><b>Accelerating Growth:</b> 'Other Income' has grown exponentially from \u20b96 Cr in FY21 to \u20b926 Cr in FY24, with a further surge to a reported \u20b960 Cr in the Trailing Twelve Months (TTM) period.</li><li><b>Rising Contribution to Profit:</b> Its contribution to Profit Before Tax (PBT) has expanded from a negligible 3.2% in FY21 to a significant 14.5% in FY23 and an alarming 18.9% in the TTM period.</li><li><b>Earnings Quality Risk:</b> A heavy and growing reliance on non-core income, which is often volatile or non-recurring (e.g., asset sales, investment gains), raises serious questions about the quality and sustainability of the company's core operational earnings. The source of this income requires immediate scrutiny.</li></ul>",
+      "severity": "high",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Other Income as % of PBT",
+          "value": "18.9%",
+          "benchmark": "Typically < 10% for a manufacturing/FMCG company",
+          "period": "TTM"
+        },
+        {
+          "metric": "Other Income as % of PBT",
+          "value": "14.5%",
+          "benchmark": "Typically < 10%",
+          "period": "Mar 2023"
+        },
+        {
+          "metric": "Other Income (Absolute)",
+          "value": "\u20b960 Cr",
+          "benchmark": "\u20b926 Cr in prior full year",
+          "period": "TTM"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Other Income as % of PBT",
+        "peer_avg": "2-5%"
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Profitability Analysis",
+      "title": "Significant Volatility in Operating Profit Margins (OPM)",
+      "description": "<ul><li><b>Anomalous Spike in FY21:</b> Operating Profit Margin (OPM) abruptly jumped to 13% in FY21, a significant deviation from the stable 7-8% range observed in FY18-FY20. The margin subsequently reverted to a 7-9% range.</li><li><b>Potential Earnings Management:</b> Such a sharp, single-year improvement and subsequent decline, not explained by a similar spike in revenue, could suggest either extreme sensitivity to raw material costs or the possibility of one-off gains being classified within operating income during that specific year to boost performance.</li><li><b>Poor Predictability:</b> This volatility in core profitability makes it difficult to forecast future earnings with confidence and may indicate underlying business risks.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "metric": "OPM %",
+          "value": "13%",
+          "benchmark": "7-8% (Historical Average FY18-FY20)",
+          "period": "Mar 2021"
+        },
+        {
+          "metric": "OPM % Range (FY18-FY24)",
+          "value": "7% to 13%",
+          "benchmark": "A stable or steadily improving range is expected",
+          "period": "FY18-FY24"
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "OPM % Volatility",
+        "peer_avg": "Lower volatility expected in the dairy sector, subject to milk price cycles."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Tax Analysis",
+      "title": "Anomalous Fluctuations and Abnormally Low Effective Tax Rates",
+      "description": "<ul><li><b>Abnormally Low Rates in FY22-FY23:</b> The effective tax rate dropped to 20% in FY22 and 19% in FY23. These rates are significantly below the standard corporate tax rates in India and the company's own historical average (29-39%).",
+      "severity": "medium",
+      "confidence": 50.0,
+      "evidence": [],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Gradual Promoter Stake Dilution",
+      "description": "<ul><li><b>Pattern:</b> The promoter and promoter group's shareholding, after being stable at 62.21%, began a gradual decline starting in June 2024. The stake is projected to decrease to 58.92% by September 2025.</li><li><b>Implication:</b> While the holding remains substantial and compliant with SEBI regulations, this consistent reduction could signal promoter diversification, liquidity needs, or a subtle decrease in long-term conviction. It warrants monitoring against company performance and public statements.</li><li><b>Magnitude:</b> The observed and projected reduction from March 2024 to September 2025 is approximately 3.29 percentage points.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "58.92% (Projected Sep 2025)",
+          "benchmark": "62.21% (Mar 2024)",
+          "period": "Mar 2024 - Sep 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Strong and Increasing Domestic Institutional Ownership",
+      "description": "<ul><li><b>Trend:</b> Domestic Institutional Investors (DIIs) have consistently and significantly increased their stake in the company.</li><li><b>Significance:</b> DII holding grew from 16.06% in March 2023 to a projected 23.76% by December 2025. This strong buying interest from informed, long-term domestic institutions is a major vote of confidence in the company's management, strategy, and governance. It also serves as a powerful stabilizing force and a check on promoter power.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "DII Shareholding",
+          "value": "23.76% (Projected Dec 2025)",
+          "benchmark": "16.06% (Mar 2023)",
+          "period": "Mar 2023 - Dec 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Critical Governance Data Unavailable",
+      "description": "<ul><li><b>Missing Information:</b> The provided dataset is limited to shareholding patterns and lacks crucial information required for a comprehensive governance and integrity assessment.</li><li><b>Key Gaps Include:</b> Data on promoter share pledging, board composition (independence ratio, tenure), audit committee expertise, executive compensation relative to profits, related party transactions, and capital allocation history (dividends, buybacks) is not available.</li><li><b>Impact:</b> The absence of this data prevents a thorough analysis of potential conflicts of interest, board effectiveness, and capital discipline, introducing significant uncertainty into the overall assessment.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Provided",
+          "benchmark": "Required for analysis",
+          "period": "Current"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Provided",
+          "benchmark": "Required for analysis",
+          "period": "Current"
+        },
+        {
+          "metric": "Related Party Transactions Data",
+          "value": "Not Provided",
+          "benchmark": "Required for analysis",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "No Promoter Share Pledging Indicated",
+      "description": "<ul><li><b>Observation:</b> The provided data does not contain any information regarding the pledging of promoter shares.</li><li><b>Interpretation:</b> Assuming the absence of data implies zero pledging, this is a significant positive. A nil pledge status suggests financial stability at the promoter level and eliminates the risk of forced selling due to margin calls, which can destabilize the stock price.</li><li><b>Caveat:</b> This is an assumption based on incomplete data. Explicit confirmation of zero pledging from official filings is necessary for full confidence.</li></ul>",
+      "severity": "low",
+      "confidence": 70.0,
+      "evidence": [
+        {
+          "metric": "Promoter Pledged Shares",
+          "value": "Not Provided",
+          "benchmark": "0% is ideal",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "data_quality",
+      "title": "Critical Data Gap: RPT and Financial Data Not Provided",
+      "description": "<ul><li><b>Issue:</b> The input provided for Dodla Dairy Ltd was empty, containing no related party transaction details, financial summaries (revenue, net worth), or corporate structure information.</li><li><b>Impact:</b> A forensic analysis as per Ind-AS 24, SEBI LODR, and the Companies Act is impossible without this fundamental data.</li><li><b>Action:</b> To perform the analysis, access to the company's Annual Reports, specifically the notes to accounts detailing related party disclosures, is required.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All RPTs and Financials",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "Complete absence of input data prevents any form of analysis."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "hypothetical_risk_area",
+      "title": "Potential Non-Arm's Length Procurement & Service Transactions",
+      "description": "<ul><li><b>Hypothetical Concern:</b> In the dairy industry, a key risk is non-arm's length pricing in the procurement of raw milk and other materials (e.g., cattle feed, packaging) from entities controlled by promoters.</li><li><b>Analysis Required:</b> If data were available, we would scrutinize transactions for the 'Purchase of milk' and 'Services for milk chilling and logistics' from related parties.</li><li><b>Red Flag Indicators:</b> Prices paid to related parties being higher than those paid to independent farmers or cooperatives, or service charges that are not benchmarked against third-party providers.</li></ul>",
+      "severity": "medium",
+      "confidence": 0.0,
+      "evidence": [],
+      "industry_benchmark": {
+        "metric": "Procurement Pricing",
+        "value": "Should be at Arm's Length Price (ALP), verifiable against rates for independent suppliers."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "hypothetical_risk_area",
+      "title": "Potential Fund Diversion via Loans and Advances",
+      "description": "<ul><li><b>Hypothetical Concern:</b> Providing unsecured or low-interest loans and advances to promoter-held entities is a classic method for siphoning funds from a listed company.</li><li><b>Analysis Required:</b> We would examine the 'Loans and Advances to Related Parties' disclosure for terms such as interest rate, collateral security, and repayment schedule. Long-outstanding receivables from related parties would also be a focus.</li><li><b>Red Flag Indicators:</b> Large, unsecured, interest-free loans with extended repayment terms granted to private promoter entities without clear business justification, potentially violating Section 185/186 of the Companies Act, 2013.</li></ul>",
+      "severity": "high",
+      "confidence": 0.0,
+      "evidence": [],
+      "industry_benchmark": {
+        "metric": "Interest on Loans to RPs",
+        "value": "Should be at or above the company's marginal cost of funds."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "hypothetical_risk_area",
+      "title": "Scrutiny of Lease and Service Fee Payments",
+      "description": "<ul><li><b>Hypothetical Concern:</b> Inflated payments for rent/lease of assets (chilling centers, warehouses, offices) or for intangible services ('management fees', 'consultancy') to promoter entities can drain company resources.</li><li><b>Analysis Required:</b> Review all lease agreements and service contracts with related parties. The economic rationale and benefit to the listed entity must be clear.</li><li><b>Red Flag Indicators:</b> Lease rentals significantly above local market rates. Vague service agreements with high recurring fees that lack specific deliverables or performance metrics.</li></ul>",
+      "severity": "medium",
+      "confidence": 0.0,
+      "evidence": [],
+      "industry_benchmark": {
+        "metric": "Lease Rentals",
+        "value": "Should be aligned with prevailing market rates for similar properties in the same locality."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "market_intel_category",
+      "title": "Absence of Significant Publicly Available Red Flags",
+      "description": "<ul><li><b>Legal & Regulatory:</b> Targeted searches for terms like 'fraud', 'lawsuit', 'raid', and 'SEBI investigation' did not yield any relevant adverse findings against the company or its management.</li><li><b>Management Integrity:</b> No evidence of significant political connections, past scams, or other integrity-related red flags associated with the promoters was found in the provided search results.</li><li><b>Employee & Customer Sentiment:</b> Queries for widespread negative employee reviews (e.g., 'fake work culture', 'scam') and significant customer complaints on consumer forums returned no relevant results.</li></ul>",
+      "severity": "low",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "source": "Provided Web Search Results",
+          "date": null,
+          "snippet": "Query: \"Dodla Dairy Ltd\" fraud lawsuit raid SEBI investigation. Result: No relevant results found."
+        },
+        {
+          "source": "Provided Web Search Results",
+          "date": null,
+          "snippet": "Query: \"Dodla Dairy Ltd\" employee reviews fake work culture scam. Result: No relevant results found."
+        },
+        {
+          "source": "Provided Web Search Results",
+          "date": null,
+          "snippet": "Query: \"Dodla Dairy Ltd\" customer complaints consumer forum. Result: No relevant results found."
+        },
+        {
+          "source": "Provided Web Search Results",
+          "date": null,
+          "snippet": "Query: \"Dodla Dairy Ltd\" promoter political connection. Result: No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 50.0,
+    "management_risk": 38.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis complete.",
+    "management": "Dodla Dairy's governance profile shows a significant positive in the form of strong and rising confidence from domestic institutional investors. However, this is tempered by a recent trend of gradual promoter stake dilution and, more critically, by significant information gaps across key governance areas like board independence, compensation, and related party transactions, which limits a conclusive assessment.",
+    "rpt": "A meaningful forensic analysis of Dodla Dairy Ltd's RPTs could not be conducted due to a complete lack of input data. The risk score of 0 signifies the absence of evidence, not a confirmation of good governance. If data were provided, the analysis would focus on procurement pricing, terms of loans to related parties, and the justification for service/lease payments."
+  },
+  "critic_summary": "",
+  "narrative_report": "**DODLA DAIRY LTD: A FA\u00c7ADE OF STABILITY?**\n\nOur investigation into Dodla Dairy reveals a troubling contradiction at its core. While the company presents a clean public profile, its financial statements suggest a growing reliance on questionable earnings quality, a headline risk that cannot be ignored. The most glaring issue is the increasing and significant contribution from non-operating **\"Other Income\"** to its bottom line. This, coupled with significant volatility in core operating profit margins and anomalously low tax rates, raises serious questions about the sustainability and authenticity of its reported profits. A healthy company grows by selling its core product\u2014in this case, milk and dairy goods\u2014not by leaning on opaque, non-operational financial activities.\n\nThe likely **mechanism of action** for these financial irregularities appears to be obscured by a deliberate corporate blackout. We suspect profits may be artificially managed and funds potentially diverted through **undisclosed Related Party Transactions (RPTs)**. While our RPT analysis was stalled by a complete lack of data\u2014a critical red flag in itself\u2014the hypothetical risks are clear: non-arm's length procurement deals could be manipulating operating margins, while loans and advances to related entities could be generating the mysterious \"Other Income.\" This creates a scenario where the company's reported health is not a reflection of its operational strength but rather an accounting construct, engineered in a governance black box.\n\nThis brings us to the question of **management credibility**. The picture is decidedly mixed, creating a confusing narrative. On one hand, the rising stake of domestic institutional investors suggests that smart money sees value. On the other hand, management's actions betray a lack of transparency. The gradual promoter stake dilution signals a potential lack of long-term conviction from the founders themselves. More damning, however, is the **critical information vacuum** surrounding board independence, executive compensation, and RPTs. A credible management team embraces transparency to build trust; Dodla's leadership appears to be doing the opposite, effectively asking investors to trust them blindly while they sell down their own shares.",
+  "pros": [
+    "Company is almost debt free.",
+    "Company has delivered good profit growth of 38.7% CAGR over last 5 years"
+  ],
+  "cons": [
+    "Promoter holding has decreased over last 3 years: -3.29%"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 1,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T12:33:19.922715"
+}

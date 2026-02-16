@@ -1,0 +1,173 @@
+{
+  "ticker": "ARMANFIN",
+  "company_name": "Arman Financial Services Ltd",
+  "sector": "Financial Services",
+  "market_cap": "1,777",
+  "overall_risk_score": 18.3,
+  "risk_level": "LOW",
+  "findings_count": 5,
+  "critical_findings": 2,
+  "high_findings": 1,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Significant and Consistent Promoter Stake Dilution",
+      "description": "<ul><li><b>Persistent Selling:</b> Promoter shareholding has consistently declined from 27.31% in March 2023 to 22.09% in March 2024, a reduction of over 5 percentage points or ~19% of their stake in one year.</li><li><b>Potential Signal:</b> Such significant and steady selling by the core ownership group can be a red flag, potentially signaling a lack of confidence in the company's long-term prospects or a strategic exit while market valuations are high.</li><li><b>Coincident Institutional Activity:</b> The promoter dilution occurred during a period of sharply increased FII and DII holdings (Dec 2023 - Mar 2024), suggesting the stake may have been offloaded to institutional investors via block deals or other market mechanisms.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "22.09%",
+          "benchmark": "27.31%",
+          "period": "Mar 2024 vs Mar 2023"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Absence of Critical Governance and Pledging Data",
+      "description": "<ul><li><b>Pledging Status Unknown:</b> No data was provided on promoter share pledging. For a financial services company, any level of pledging is a material risk, and its absence from the data prevents a crucial risk assessment.</li><li><b>Board Structure Opaque:</b> Information regarding board composition, the ratio of independent directors, and the structure of key committees (Audit, Nomination & Remuneration) is missing. This makes it impossible to assess board independence and oversight quality as per SEBI LODR regulations.</li><li><b>Related Party and Compensation Blind Spots:</b> There is no information on related party transactions or executive compensation, preventing analysis of potential conflicts of interest or excessive remuneration.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Data Availability for Key Governance Metrics",
+          "value": "Not Provided",
+          "benchmark": "Required for full analysis",
+          "period": "Current Assessment"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Volatile Institutional Shareholding and Rising Retail Base",
+      "description": "<ul><li><b>FII Volatility:</b> FII holding shows extreme volatility, jumping from 3.89% (Sep 2023) to 10.20% (Mar 2024) and then projected to fall to 1.97% (Dec 2024). This pattern suggests short-term trading interest rather than long-term strategic investment.</li><li><b>Expanding Retail Participation:</b> The number of shareholders has nearly quadrupled from ~11,000 in March 2023 to a projected ~42,000 by December 2024. While this indicates broader market interest, it also shows that promoters and potentially institutions have been selling into a rising retail demand.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Shareholding",
+          "value": "10.20%",
+          "benchmark": "3.89% (6 months prior)",
+          "period": "Mar 2024"
+        },
+        {
+          "metric": "Number of Shareholders",
+          "value": "19,745",
+          "benchmark": "11,196",
+          "period": "Mar 2024 vs Mar 2023"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data_Integrity_Issue",
+      "title": "Insufficient Data for RPT Analysis",
+      "description": "<ul><li><b>Critical Data Missing:</b> The analysis could not be performed due to a complete lack of input data for Arman Financial Services Ltd.</li><li><b>Missing Financials:</b> Revenue and Net Worth figures were not provided, making it impossible to assess the materiality of any potential transactions.</li><li><b>Missing Transaction Data:</b> The list of related party transactions, loans, advances, and guarantees was empty.</li><li><b>Missing Corporate Data:</b> Details on related parties and the corporate structure were not available.</li></ul><p>Without this fundamental information, it is impossible to conduct any form of forensic analysis, including assessing transaction volume, pricing, structural risks, or disclosure quality.</p>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "N/A",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "The entire 'rpt_transactions' input array was empty."
+        },
+        {
+          "transaction": "N/A",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "The 'financials_summary' input object contained 'N/A' for revenue and net worth."
+        },
+        {
+          "transaction": "N/A",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "The 'related_parties' input object was empty."
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Data Availability",
+        "value": "Complete data is required for analysis. Current availability is 0%."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "market_intel_category",
+      "title": "Absence of Significant Negative Public Information",
+      "description": "<ul><li><b>Legal & Regulatory:</b> Searches for fraud, major lawsuits, regulatory raids (e.g., Income Tax, ED), or investigations by SEBI yielded no relevant adverse findings.</li><li><b>Employee & Corporate Culture:</b> No significant negative employee reviews indicating a toxic, fraudulent, or 'fake work' culture were discovered in the public domain.</li><li><b>Customer Sentiment:</b> A search for widespread customer complaints on consumer forums returned no significant results, suggesting a lack of systemic service or product issues being publicly reported.</li><li><b>Promoter Integrity:</b> No evidence of political connections or other publicly documented integrity-related red flags concerning the promoters was found.</li></ul>",
+      "severity": "low",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Arman Financial Services Ltd\" fraud lawsuit raid SEBI investigation. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Arman Financial Services Ltd\" employee reviews fake work culture scam. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Arman Financial Services Ltd\" customer complaints consumer forum. Result: No relevant results found."
+        },
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Arman Financial Services Ltd\" promoter political connection. Result: No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 65.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 83 column 6 (char 5317)",
+    "management": "Management integrity is questionable due to significant and consistent promoter stake dilution, which raises concerns about their long-term conviction. A comprehensive governance assessment is impossible due to the complete absence of data on share pledging, board independence, and related party transactions, posing a critical unquantifiable risk for investors.",
+    "rpt": "A forensic analysis of related party transactions for Arman Financial Services Ltd. could not be completed due to the absence of all required data. No assessment of RPT risk can be made, and the risk score of 0 reflects the inability to identify any risks, not the absence of risk."
+  },
+  "critic_summary": "",
+  "pros": [
+    "Company has reduced debt.",
+    "Company's median sales growth is 37.5% of last 10 years"
+  ],
+  "cons": [
+    "Though the company is reporting repeated profits, it is not paying out dividend",
+    "Company has low interest coverage ratio.",
+    "Promoter holding is low: 22.0%",
+    "Contingent liabilities of Rs.675 Cr.",
+    "Company's cost of borrowing seems high",
+    "Promoter holding has decreased over last 3 years: -5.35%"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 0,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T11:36:05.471190"
+}

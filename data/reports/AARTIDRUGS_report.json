@@ -1,0 +1,164 @@
+{
+  "ticker": "AARTIDRUGS",
+  "company_name": "Aarti Drugs Ltd",
+  "sector": "Healthcare",
+  "market_cap": "3,400",
+  "overall_risk_score": 18.1,
+  "risk_level": "LOW",
+  "findings_count": 4,
+  "critical_findings": 2,
+  "high_findings": 1,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Consistent Promoter Shareholding Reduction",
+      "description": "<ul><li><b>Pattern of Selling:</b> Promoters have consistently reduced their stake in the company over the past several quarters. The holding decreased from 59.57% in March 2023 to 57.13% in March 2024, a reduction of 2.44 percentage points over one year.</li><li><b>Potential Implications:</b> Such a steady decrease in promoter holding can be a negative signal, potentially indicating a lack of long-term conviction in the company's prospects or a need for liquidity for other ventures. While the holding remains above 50%, the trend is a significant concern for minority shareholders.</li><li><b>Institutional Absorption:</b> The shares offloaded by promoters appear to have been absorbed primarily by Domestic Institutional Investors (DIIs), whose holding increased from 4.09% to 5.99% in the same period. This provides some comfort, as professional investors are showing increased interest.</li></ul>",
+      "severity": "high",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Promoter Holding (Mar 2023)",
+          "value": "59.57%",
+          "benchmark": "N/A",
+          "period": "Mar 2023"
+        },
+        {
+          "metric": "Promoter Holding (Mar 2024)",
+          "value": "57.13%",
+          "benchmark": "N/A",
+          "period": "Mar 2024"
+        },
+        {
+          "metric": "1-Year Change in Promoter Holding",
+          "value": "-2.44%",
+          "benchmark": "Stable or increasing holding is preferred",
+          "period": "Mar 2023 - Mar 2024"
+        },
+        {
+          "metric": "1-Year Change in DII Holding",
+          "value": "+1.90%",
+          "benchmark": "N/A",
+          "period": "Mar 2023 - Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "data_limitation",
+      "title": "Significant Data Gaps in Key Governance Areas",
+      "description": "<ul><li><b>Missing Information:</b> A comprehensive governance assessment is not possible due to the absence of critical data.</li><li><b>Key Unknowns:</b> There is no information available on Promoter Share Pledging, Related Party Transactions, Board Composition and Independence, or Executive Compensation.</li><li><b>Inherent Risk:</b> The inability to analyze these areas constitutes a risk, as potential issues like high pledging, unfavorable related-party deals, a weak board, or excessive compensation cannot be ruled out.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Share Pledging Data",
+          "value": "Not Available",
+          "benchmark": "Data should be publicly disclosed",
+          "period": "Current"
+        },
+        {
+          "metric": "Board Composition & Independence Data",
+          "value": "Not Available",
+          "benchmark": "Data should be publicly disclosed",
+          "period": "Current"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Data should be publicly disclosed",
+          "period": "Current"
+        },
+        {
+          "metric": "Related Party Transactions Data",
+          "value": "Not Available",
+          "benchmark": "Data should be publicly disclosed",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "data_integrity_issue",
+      "title": "Insufficient Data for Forensic Analysis",
+      "description": "<ul><li><b>Missing Data:</b> The provided input for Aarti Drugs Ltd is empty. Key data points such as related party names, transaction details (nature, value), loans, guarantees, and financial summaries (revenue, net worth) are absent.</li><li><b>Analysis Impeded:</b> Due to the lack of data, a forensic analysis cannot be conducted. It is impossible to assess:</li><ul><li>RPT volume and materiality against revenue or net worth.</li><li>The nature and pricing of transactions (e.g., sales, purchases, services).</li><li>Potential red flags related to loans, advances, or guarantees.</li><li>Structural complexities or undisclosed benefits.</li></ul><li><b>Recommendation:</b> A comprehensive analysis requires detailed RPT disclosures from the company's annual reports as per Ind-AS 24 and SEBI LODR.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "All",
+          "amount": "N/A",
+          "party": "N/A",
+          "concern": "No transaction data was provided for analysis."
+        }
+      ],
+      "industry_benchmark": {
+        "RPT as % of Revenue (Pharma API)": "Typically 5-15%"
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Data Integrity Issue",
+      "title": "Search Result Contamination",
+      "description": "<ul><li><b>Data Irrelevance:</b> All provided web search results are completely unrelated to the target company, Aarti Drugs Ltd.</li><li><b>Source of Confusion:</b> The search results pertain to 'Aarti', a Hindu religious ritual of worship. This is likely due to the search engine misinterpreting the company name which contains a common word.</li><li><b>Impact on Analysis:</b> No qualitative red flags, management history, or reputational risks for Aarti Drugs Ltd can be identified from the supplied data. The data is unusable for the requested analysis.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "source": "https://www.youtube.com/watch?v=q8lcgclUVSQ",
+          "date": null,
+          "snippet": "\u0938\u092c\u0938\u0947 \u091c\u093c\u094d\u092f\u093e\u0926\u093e \u0938\u0941\u0928\u0940 \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0940 \u0906\u0930\u0924\u093f\u092f\u093e\u0902 | \u0938\u092e\u094d\u092a\u0942\u0930\u094d\u0923 \u0906\u0930\u0924\u0940 \u2026: Our repertoire spans a wide range of languages and traditions, including Rajasthani, Hindi, and Bhojpuri folk music, reflecting the diverse cultural fabric of India. Our catalogue represents a..."
+        },
+        {
+          "source": "https://hindi.webdunia.com/aarti-chalisa/har-har-mahadev-aarti-123080400087_1.html",
+          "date": null,
+          "snippet": "Mahadev Shiv ji ki aarti | \u092d\u0917\u0935\u093e\u0928 \u092e\u0939\u093e\u0926\u0947\u0935 \u091c\u0940 \u0915\u0940 \u0906\u0930\u0924\u0940: Shiv Ji Ki Aarti: \u092d\u0917\u0935\u093e\u0928 \u0936\u093f\u0935\u091c\u0940 \u0915\u0947 \u0938\u094d\u0935\u0930\u0942\u092a \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u0909\u0928\u0915\u0940 \u0915\u0908 \u0906\u0930\u0924\u093f\u092f\u093e\u0902 \u0939\u0948\u0902\u0964 \u091c\u0948\u0938\u0947 \u0906\u0930\u0924\u0940 \u0936\u093f\u0935\u091c\u0940 \u0915\u0940 : \u0913\u092e \u091c\u092f \u0936\u093f\u0935 \u0913\u0902\u0915\u093e\u0930\u093e, \u0906\u0930\u0924\u0940 \u092e\u0939\u093e\u0926\u0947\u0935 \u091c\u0940 \u0915\u0940 \u0939\u0930 \u0939\u0930 \u092e\u0939\u093e\u0926\u0947\u0935 \u0906\u0926\u093f ..."
+        },
+        {
+          "source": "https://kirtankar.com/what-is-aarti-meaning-significance-hindu-worship/",
+          "date": null,
+          "snippet": "In Hinduism, Aarti (also spelled Arti or Arathi) is one of the most important and beautiful parts of daily worship. It\u2019s a ceremonial offering of light to a deity, performed with devotion, gratitude, and reverence."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 55.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: All LLM providers failed. Errors: openrouter: OpenRouter error 500: {\"error\":{\"message\":\"Internal Server Error\",\"code\":500}}",
+    "management": "The management integrity assessment for Aarti Drugs is marked by a significant concern: a consistent reduction in promoter shareholding over the last year, which raises questions about their long-term conviction. This is partially mitigated by rising interest from domestic institutions. However, a complete analysis is severely hampered by the lack of data on share pledging, board structure, and related party transactions, introducing considerable uncertainty.",
+    "rpt": "A forensic RPT analysis for Aarti Drugs Ltd could not be performed as the provided input data was empty. No assessment of risk is possible without transaction details and financial context."
+  },
+  "critic_summary": "",
+  "pros": [],
+  "cons": [
+    "The company has delivered a poor sales growth of 5.74% over past five years.",
+    "Company has a low return on equity of 13.8% over last 3 years.",
+    "Company might be capitalizing the interest cost",
+    "Dividend payout has been low at 5.45% of profits over last 3 years",
+    "Promoter holding has decreased over last 3 years: -4.63%"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 3,
+    "announcements": 1
+  },
+  "analyzed_at": "2026-02-16T09:48:42.140019"
+}

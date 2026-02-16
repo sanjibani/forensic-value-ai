@@ -1,0 +1,262 @@
+[
+    {
+        "ticker": "SAKUMA",
+        "name": "Sakuma Exports Ltd"
+    },
+    {
+        "ticker": "MENONBE",
+        "name": "Menon Bearings Ltd"
+    },
+    {
+        "ticker": "ASIANENE",
+        "name": "Asian Energy Services Ltd"
+    },
+    {
+        "ticker": "ORIENTBELL",
+        "name": "Orient Bell Ltd"
+    },
+    {
+        "ticker": "ARMANFIN",
+        "name": "Arman Financial Services Ltd"
+    },
+    {
+        "ticker": "PLASTIBLEN",
+        "name": "Plastiblends India Ltd"
+    },
+    {
+        "ticker": "NGLFINE",
+        "name": "NGL Fine-Chem Ltd"
+    },
+    {
+        "ticker": "GOCLCORP",
+        "name": "GOCL Corporation Ltd"
+    },
+    {
+        "ticker": "HINDCOMPOS",
+        "name": "Hindustan Composites Ltd"
+    },
+    {
+        "ticker": "NCLIND",
+        "name": "NCL Industries Ltd"
+    },
+    {
+        "ticker": "TBZ",
+        "name": "Tribhovandas Bhimji Zaveri Ltd"
+    },
+    {
+        "ticker": "EXPLEOSOL",
+        "name": "Expleo Solutions Ltd"
+    },
+    {
+        "ticker": "GEPIL",
+        "name": "GE Power India Ltd"
+    },
+    {
+        "ticker": "KICL",
+        "name": "Kalyani Investment Company Ltd"
+    },
+    {
+        "ticker": "WHEELS",
+        "name": "Wheels India Ltd"
+    },
+    {
+        "ticker": "BCG",
+        "name": "Brightcom Group Ltd"
+    },
+    {
+        "ticker": "HOMESFY",
+        "name": "Homesfy Realty Ltd"
+    },
+    {
+        "ticker": "AGI",
+        "name": "AGI Greenpac Ltd"
+    },
+    {
+        "ticker": "ASKAUTOLTD",
+        "name": "ASK Automotive Ltd"
+    },
+    {
+        "ticker": "AARTIDRUGS",
+        "name": "Aarti Drugs Ltd"
+    },
+    {
+        "ticker": "AARTIPHARM",
+        "name": "Aarti Pharmalabs Ltd"
+    },
+    {
+        "ticker": "ACCELYA",
+        "name": "Accelya Solutions India Ltd"
+    },
+    {
+        "ticker": "ADVENZYMES",
+        "name": "Advanced Enzyme Tech Ltd"
+    },
+    {
+        "ticker": "AHLUCONT",
+        "name": "Ahluwalia Contracts (India) Ltd"
+    },
+    {
+        "ticker": "AMIORG",
+        "name": "Ami Organics Ltd"
+    },
+    {
+        "ticker": "ANANTRAJ",
+        "name": "Anant Raj Ltd"
+    },
+    {
+        "ticker": "ARVINDFASN",
+        "name": "Arvind Fashions Ltd"
+    },
+    {
+        "ticker": "ARVIND",
+        "name": "Arvind Ltd"
+    },
+    {
+        "ticker": "ASHOKA",
+        "name": "Ashoka Buildcon Ltd"
+    },
+    {
+        "ticker": "ASTRAMICRO",
+        "name": "Astra Microwave Products Ltd"
+    },
+    {
+        "ticker": "AVALON",
+        "name": "Avalon Technologies Ltd"
+    },
+    {
+        "ticker": "AZAD",
+        "name": "Azad Engineering Ltd"
+    },
+    {
+        "ticker": "BASF",
+        "name": "BASF India Ltd"
+    },
+    {
+        "ticker": "BAJAJCON",
+        "name": "Bajaj Consumer Care Ltd"
+    },
+    {
+        "ticker": "BAJAJHIND",
+        "name": "Bajaj Hindusthan Sugar Ltd"
+    },
+    {
+        "ticker": "BALMERLAWRIE",
+        "name": "Balmer Lawrie & Co. Ltd"
+    },
+    {
+        "ticker": "BANCOINDIA",
+        "name": "Banco Products (India) Ltd"
+    },
+    {
+        "ticker": "BARBEQUE",
+        "name": "Barbeque Nation Hospitality Ltd"
+    },
+    {
+        "ticker": "BEPL",
+        "name": "Bhansali Engineering Polymers Ltd"
+    },
+    {
+        "ticker": "BLUEJET",
+        "name": "Blue Jet Healthcare Ltd"
+    },
+    {
+        "ticker": "BOMDYEING",
+        "name": "Bombay Dyeing & Manufacturing Co. Ltd"
+    },
+    {
+        "ticker": "CARERATING",
+        "name": "CARE Ratings Ltd"
+    },
+    {
+        "ticker": "CMSINFO",
+        "name": "CMS Info Systems Ltd"
+    },
+    {
+        "ticker": "CAMLINFINE",
+        "name": "Camlin Fine Sciences Ltd"
+    },
+    {
+        "ticker": "CARTRADE",
+        "name": "Cartrade Tech Ltd"
+    },
+    {
+        "ticker": "CHOICEIN",
+        "name": "Choice International Ltd"
+    },
+    {
+        "ticker": "CIGNITITEC",
+        "name": "Cigniti Technologies Ltd"
+    },
+    {
+        "ticker": "CONFIPET",
+        "name": "Confidence Petroleum India Ltd"
+    },
+    {
+        "ticker": "CYIENTDLM",
+        "name": "Cyient DLM Ltd"
+    },
+    {
+        "ticker": "DBCORP",
+        "name": "D.B. Corp Ltd"
+    },
+    {
+        "ticker": "DCBBANK",
+        "name": "DCB Bank Ltd"
+    },
+    {
+        "ticker": "DCXINDIA",
+        "name": "DCX Systems Ltd"
+    },
+    {
+        "ticker": "DALMIASUG",
+        "name": "Dalmia Bharat Sugar and Industries Ltd"
+    },
+    {
+        "ticker": "DATAMATICS",
+        "name": "Datamatics Global Services Ltd"
+    },
+    {
+        "ticker": "DELTACORP",
+        "name": "Delta Corp Ltd"
+    },
+    {
+        "ticker": "DEN",
+        "name": "Den Networks Ltd"
+    },
+    {
+        "ticker": "DHANI",
+        "name": "Dhani Services Ltd"
+    },
+    {
+        "ticker": "DHANUKA",
+        "name": "Dhanuka Agritech Ltd"
+    },
+    {
+        "ticker": "DILIPBUILD",
+        "name": "Dilip Buildcon Ltd"
+    },
+    {
+        "ticker": "DISHTV",
+        "name": "Dish TV India Ltd"
+    },
+    {
+        "ticker": "DISHMAN",
+        "name": "Dishman Carbogen Amcis Ltd"
+    },
+    {
+        "ticker": "DODLA",
+        "name": "Dodla Dairy Ltd"
+    },
+    {
+        "ticker": "DREAMFOLKS",
+        "name": "Dreamfolks Services Ltd"
+    },
+    {
+        "ticker": "ESAFSFB",
+        "name": "ESAF Small Finance Bank Ltd"
+    },
+    {
+        "ticker": "EDELWEISS",
+        "name": "Edelweiss Financial Services Ltd"
+    }
+]

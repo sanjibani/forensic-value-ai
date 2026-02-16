@@ -1,0 +1,222 @@
+{
+  "ticker": "ASKAUTOLTD",
+  "company_name": "ASK Automotive Ltd",
+  "sector": "Consumer Discretionary",
+  "market_cap": "8,601",
+  "overall_risk_score": 13.3,
+  "risk_level": "LOW",
+  "findings_count": 8,
+  "critical_findings": 1,
+  "high_findings": 1,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Planned Promoter Stake Reduction for Regulatory Compliance",
+      "description": "<ul><li><b>Observation:</b> The promoter shareholding is projected to decrease from 85.00% post-IPO (Dec 2023) to 74.95% by December 2025.</li><li><b>Analysis:</b> This is a structured, phased dilution to comply with SEBI's Minimum Public Shareholding (MPS) regulations, which mandate a maximum promoter holding of 75% within three years of listing. ASK Automotive's IPO was in November 2023.</li><li><b>Conclusion:</b> This action demonstrates proactive compliance with regulatory requirements and is not indicative of promoter distress or lack of confidence in the business.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding (Post-IPO)",
+          "value": "85.00%",
+          "benchmark": "Max 75% (within 3 years)",
+          "period": "Dec 2023"
+        },
+        {
+          "metric": "Projected Promoter Shareholding",
+          "value": "74.95%",
+          "benchmark": "Max 75%",
+          "period": "Dec 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Increasing Institutional Ownership Signals Confidence",
+      "description": "<ul><li><b>Observation:</b> Concurrent with the promoter's planned stake sale, institutional ownership is projected to increase significantly.</li><li><b>Analysis:</b> FII holding is expected to rise from 4.92% to 9.72%, and DII holding from 3.83% to 9.13% between Dec 2023 and Dec 2025. The institutional buying is absorbing the shares being offloaded by the promoters.</li><li><b>Conclusion:</b> Strong and growing interest from institutional investors is a positive signal, suggesting confidence in the company's fundamentals and future prospects.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Holding Change (Dec 2023 - Dec 2025)",
+          "value": "+4.80%",
+          "benchmark": "N/A",
+          "period": "Dec 2023 - Dec 2025"
+        },
+        {
+          "metric": "DII Holding Change (Dec 2023 - Dec 2025)",
+          "value": "+5.30%",
+          "benchmark": "N/A",
+          "period": "Dec 2023 - Dec 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Critical Data Gaps Obscure Key Governance Risks",
+      "description": "<ul><li><b>Observation:</b> The provided dataset lacks information on several critical areas of corporate governance.</li><li><b>Analysis:</b> There is no data available for Promoter Share Pledging, Board Composition & Independence, Executive Compensation, or Related Party Entities. The absence of this information prevents a thorough assessment of potential risks.</li><li><b>Conclusion:</b> While shareholding patterns appear positive, the inability to analyze pledging, board oversight, compensation alignment, and potential conflicts of interest represents a major blind spot for investors.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Pledging Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        },
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Provided",
+          "benchmark": "Data should be available",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "Data Integrity Issue",
+      "title": "Insufficient Data for RPT Analysis",
+      "description": "<ul><li><b>Missing Data:</b> A comprehensive forensic analysis could not be performed due to a complete lack of input data.</li><li><b>Specifics:</b> No information was provided for related parties, transaction details, loans and advances, guarantees, corporate structure, or key financial metrics (revenue, net worth).</li><li><b>Impact:</b> Without this data, it is impossible to assess RPT volume, materiality, pricing fairness, structural risks, or disclosure quality as per Ind-AS 24, SEBI LODR, and the Companies Act 2013.</li></ul>",
+      "severity": "critical",
+      "confidence": 100.0,
+      "evidence": [],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Legal & Regulatory",
+      "title": "Absence of Legal and Regulatory Red Flags",
+      "description": "<ul><li>Targeted searches for terms including 'fraud', 'lawsuit', 'raid', and 'SEBI investigation' against ASK Automotive Ltd did not yield any relevant adverse information.</li><li>The search results for these negative keywords were primarily irrelevant dictionary definitions, indicating a lack of prominent public records for such issues.</li></ul>",
+      "severity": "low",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "source": "https://www.merriam-webster.com/dictionary/ask",
+          "date": null,
+          "snippet": "The meaning of ASK is to call on for an answer. How to use ask in a sentence. Synonym Discussion of Ask."
+        },
+        {
+          "source": "https://dictionary.cambridge.org/dictionary/english/ask",
+          "date": null,
+          "snippet": "ASK definition: 1. to put a question to someone, or to request an answer from someone: 2. to consider something\u2026. Learn more."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Employee Sentiment",
+      "title": "Generally Positive Employee Sentiment",
+      "description": "<ul><li>Multiple employee review platforms indicate a positive work environment at ASK Automotive.</li><li>AmbitionBox reports a high rating of 4.1 out of 5 stars based on over 700 reviews, with 80% of employees reporting positively (snippet is incomplete but implies positive sentiment).</li><li>Glassdoor reviews for 'ASK Group' (potentially the same entity) show that 77% of employees would recommend working there.</li></ul>",
+      "severity": "low",
+      "confidence": 85.0,
+      "evidence": [
+        {
+          "source": "https://www.ambitionbox.com/overview/ask-automotive-overview",
+          "date": "2025-10-28",
+          "snippet": "Ask Automotive is rated 4.1 out of 5 stars on AmbitionBox, based on 725 company reviews. This rating reflects a generally positive employee experience, indicating satisfaction with the company\u2019s \u2026"
+        },
+        {
+          "source": "https://www.glassdoor.co.in/Reviews/ASK-Group-Reviews-E1291624.htm",
+          "date": "2025-05-21",
+          "snippet": "77% of ASK Group employees would recommend working there to a friend based on Glassdoor reviews. Employees also rated ASK Group 3.5 out of 5 for work life balance, 3.4 for culture \u2026"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Management Integrity & Track Record",
+      "title": "No Evidence of Promoter Misconduct or Political Connections",
+      "description": "<ul><li>The Chairman and Managing Director, Kuldip Singh Rathee, is identified as a founder and promoter of the company.</li><li>Searches for political connections or adverse media related to the promoter did not return any negative findings.</li><li>The available information focuses on his role in founding the company and his educational background, with no mention of him being a Politically Exposed Person (PEP).</li></ul>",
+      "severity": "low",
+      "confidence": 80.0,
+      "evidence": [
+        {
+          "source": "https://askbrake.com/corporate/board-of-directors/",
+          "date": null,
+          "snippet": "Kuldip Singh Rathee is the Chairman and Managing Director on our Board. He is also one of the Promoters and a founder of our company. He holds a Bachelor\u2019s degree in Arts (Economics Honours) from St. \u2026"
+        },
+        {
+          "source": "https://trendlyne.com/equity/share-holding/1776576/ASKAUTOLTD/31-03-2025/ask-automotive-ltd/",
+          "date": null,
+          "snippet": "ASK Automotive Ltd. shareholding pattern \u2013 Promoter holding and pledges, FII, DII, and Mutual Fund holding changes for the Mar 2025 quarter. Find out who owns ASK Automotive Ltd."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Customer Sentiment",
+      "title": "Lack of Significant Public Customer Complaints",
+      "description": "<ul><li>Searches for customer complaints on consumer forums and other public platforms did not reveal any significant or widespread issues with ASK Automotive's products or services.</li><li>An investor forum post discusses the company's market position positively, rather than highlighting customer grievances.</li></ul>",
+      "severity": "low",
+      "confidence": 75.0,
+      "evidence": [
+        {
+          "source": "https://consumerhelpline.gov.in/public/",
+          "date": null,
+          "snippet": "Resolve consumer complaints quickly and effectively with the National Consumer Helpline."
+        },
+        {
+          "source": "https://forum.valuepickr.com/t/ask-automotive-ltd-can-it-disrupt-the-automotive-sector/175703",
+          "date": "2025-01-29",
+          "snippet": "Incorporated in 1988, ASK Automotive Limited is a manufacturer of Advance Braking Systems for two-wheelers in India. [1] Key Points. Market share [1] Ask Automotive is the largest \u2026"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 45.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 62 column 10 (char 3725)",
+    "management": "ASK Automotive's management is demonstrating positive intent by adhering to a clear plan for regulatory compliance regarding promoter shareholding, which is being met with strong institutional demand. However, a comprehensive assessment of management integrity is severely hampered by critical data gaps in key governance areas like share pledging, board independence, and related-party dealings, capping confidence in the overall governance framework.",
+    "rpt": "A forensic analysis of ASK Automotive Ltd's related party transactions could not be conducted due to the complete absence of necessary financial and transactional data. The RPT risk is unassessed."
+  },
+  "critic_summary": "",
+  "pros": [
+    "Company has delivered good profit growth of 18.4% CAGR over last 5 years",
+    "Debtor days have improved from 25.3 to 19.8 days."
+  ],
+  "cons": [
+    "Stock is trading at 7.45 times its book value",
+    "Company might be capitalizing the interest cost"
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 1,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T11:01:39.590040"
+}

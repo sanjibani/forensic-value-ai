@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+.venv/
+data/company_cache/
+data/analyses/
+test_pdf_deps.py
+*.log

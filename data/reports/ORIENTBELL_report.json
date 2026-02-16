@@ -1,0 +1,304 @@
+{
+  "ticker": "ORIENTBELL",
+  "company_name": "Orient Bell Ltd",
+  "sector": "Consumer Discretionary",
+  "market_cap": "440",
+  "overall_risk_score": 48.1,
+  "risk_level": "MODERATE",
+  "findings_count": 10,
+  "critical_findings": 0,
+  "high_findings": 2,
+  "findings": [
+    {
+      "agent_name": "forensic",
+      "finding_type": "Exceptional Items & One-Time Charges",
+      "title": "FY2018 Profits Materially Inflated by Non-Operating and Accounting Items",
+      "description": "<ul><li><b>Abnormal Other Income:</b> In FY2018, 'Other Income' surged to \u20b921 Cr, a significant deviation from its historical range of \u20b91-6 Cr. This single item accounted for 44.7% of the Profit Before Tax (PBT), artificially inflating the year's earnings.</li><li><b>Unusual Depreciation Change:</b> In the same year, depreciation expense dropped to \u20b915 Cr from a stable \u20b919 Cr in preceding years. This reduction further boosted pre-tax profits and is suspicious in conjunction with the high 'Other Income', possibly indicating a sale of assets where the profit was booked in 'Other Income'.</li><li><b>Anomalously Low Tax Rate:</b> The effective tax rate for FY2018 was only 15%, far below the statutory rate. This combination of high other income, lower depreciation, and a low tax rate resulted in a Net Profit of \u20b940 Cr, which does not reflect the underlying operational performance.</li></ul>",
+      "severity": "high",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Other Income",
+          "value": "\u20b921 Cr",
+          "benchmark": "\u20b91-6 Cr (Historical Average)",
+          "period": "FY2018"
+        },
+        {
+          "metric": "Other Income as % of PBT",
+          "value": "44.7%",
+          "benchmark": "< 15%",
+          "period": "FY2018"
+        },
+        {
+          "metric": "Depreciation",
+          "value": "\u20b915 Cr",
+          "benchmark": "\u20b919 Cr (FY2017)",
+          "period": "FY2018"
+        },
+        {
+          "metric": "Tax %",
+          "value": "15%",
+          "benchmark": "25-35% (Typical Range)",
+          "period": "FY2018"
+        }
+      ],
+      "industry_benchmark": null,
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "forensic",
+      "finding_type": "Exceptional Items & One-Time Charges",
+      "title": "Aggressive and Volatile Tax Accounting Used to Manage Net Profit",
+      "description": "<ul><li><b>Negative Tax Rates:</b> The company has reported negative tax rates in multiple years",
+      "severity": "medium",
+      "confidence": 50.0,
+      "evidence": [],
+      "industry_benchmark": {},
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Stable and High Promoter Shareholding",
+      "description": "<ul><li><b>Promoter Stake:</b> Promoters consistently hold a significant stake of approximately 65% over the last five quarters (Mar 2023 - Mar 2024).</li><li><b>Stability:</b> The shareholding has remained very stable, with minor fluctuations, indicating strong promoter commitment and no significant selling pressure.</li><li><b>Creeping Acquisition:</b> The holding is well below the 75% SEBI limit, providing headroom for future creeping acquisitions if desired.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "64.90%",
+          "benchmark": ">50% is strong commitment",
+          "period": "Mar 2024"
+        },
+        {
+          "metric": "Promoter Shareholding Change (YoY)",
+          "value": "0.00%",
+          "benchmark": "Stable",
+          "period": "Mar 2023 vs Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Absence of Reported Promoter Share Pledging",
+      "description": "<ul><li><b>Zero Pledging:</b> The provided data does not indicate any pledging of promoter shares.</li><li><b>Financial Health Indicator:</b> An absence of pledging is a strong positive signal, suggesting that promoters are not using their shares as collateral for personal or corporate loans, which reduces a key risk for minority shareholders.</li></ul>",
+      "severity": "low",
+      "confidence": 85.0,
+      "evidence": [
+        {
+          "metric": "Promoter Pledged Shares",
+          "value": "Not Reported (Assumed 0%)",
+          "benchmark": "0%",
+          "period": "Latest Available"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Negligible Institutional Ownership",
+      "description": "<ul><li><b>Low Institutional Confidence:</b> Foreign Institutional Investor (FII) and Domestic Institutional Investor (DII) holdings are exceptionally low and have remained so.</li><li><b>FII Holding:</b> FII stake was a mere 0.06% as of March 2024.</li><li><b>DII Holding:</b> DII stake was even lower at 0.02% as of March 2024.</li><li><b>Red Flag:</b> The lack of interest from institutional investors, who typically perform extensive due diligence, is a significant red flag regarding the company's growth prospects, governance standards, or market liquidity.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Shareholding",
+          "value": "0.06%",
+          "benchmark": "Typically > 5% in well-regarded companies",
+          "period": "Mar 2024"
+        },
+        {
+          "metric": "DII Shareholding",
+          "value": "0.02%",
+          "benchmark": "Typically > 5% in well-regarded companies",
+          "period": "Mar 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "data_quality",
+      "title": "Significant Data Gaps in Critical Governance Areas",
+      "description": "<ul><li><b>Incomplete Data:</b> No information was provided for several critical areas of governance analysis.</li><li><b>Missing Information:</b> Key missing data points include Board Composition & Independence, Related Party Transactions, Executive Compensation, and Promoter Track Record.</li><li><b>Assessment Limitation:</b> The absence of this data prevents a comprehensive assessment of management integrity and corporate governance quality, introducing significant uncertainty for investors.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Available",
+          "benchmark": "Required for analysis",
+          "period": "N/A"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Required for analysis",
+          "period": "N/A"
+        },
+        {
+          "metric": "Related Party Transactions Data",
+          "value": "Not Available",
+          "benchmark": "Required for analysis",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "rpt_volume_materiality",
+      "title": "Low Volume of Operational Related Party Transactions",
+      "description": "<ul><li><b>Observation:</b> The total value of operational RPTs (sales, purchases, rent) is approximately \u20b98.45 million, which constitutes a negligible 0.08% of the company's consolidated revenue (\u20b910,077 million) for FY23.</li><li><b>Implication:</b> This low dependency on related parties for core business operations is a positive indicator, reducing the risk of significant fund siphoning through sales or purchase channels.</li><li><b>Details:</b> The majority of these transactions are with Bell Tuff Glass Pvt. Ltd. for minor purchases and sales.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "Purchase of Goods",
+          "amount": "\u20b91.24 Million",
+          "party": "Bell Tuff Glass Pvt Ltd",
+          "concern": "Minimal value relative to total purchases."
+        },
+        {
+          "transaction": "Rent Paid",
+          "amount": "\u20b97.20 Million",
+          "party": "Promoter Group Individuals",
+          "concern": "Aggregate rent paid to four promoter family members."
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Operational RPT as % of Revenue",
+        "value": "Typically below 5% for manufacturing firms without significant captive supply chains."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "transaction_type_analysis",
+      "title": "Key Managerial Personnel (KMP) Remuneration is the Largest RPT Component",
+      "description": "<ul><li><b>Observation:</b> KMP remuneration (excluding share-based payments) amounts to approximately \u20b9101.06 million, representing over 90% of the total reported RPT value.</li><li><b>Implication:</b> While KMP remuneration is a standard transaction, its dominance in the RPT schedule makes it the most significant channel of fund outflow to related parties. The reasonableness of the remuneration levels should be periodically assessed by the Nomination and Remuneration Committee against industry benchmarks.</li><li><b>Details:</b> The Chairman & MD and the MD each received remuneration of \u20b931.20 million.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "transaction": "Remuneration",
+          "amount": "\u20b931.20 Million",
+          "party": "Mahendra Kumar Daga (Chairman & MD)",
+          "concern": "Significant cash outflow, requires justification of being at arm's length."
+        },
+        {
+          "transaction": "Remuneration",
+          "amount": "\u20b931.20 Million",
+          "party": "Madhur Daga (MD)",
+          "concern": "Significant cash outflow, requires justification of being at arm's length."
+        },
+        {
+          "transaction": "Remuneration",
+          "amount": "\u20b923.08 Million",
+          "party": "Aditya Gupta (CEO)",
+          "concern": "Significant cash outflow to KMP."
+        }
+      ],
+      "industry_benchmark": {
+        "metric": "Promoter/KMP Remuneration as % of Net Profit",
+        "value": "Varies widely, but amounts exceeding 5-10% of PAT can be a point of scrutiny."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "pricing_red_flags",
+      "title": "Rental Payments to Multiple Promoter Family Members",
+      "description": "<ul><li><b>Observation:</b> The company paid a total of \u20b97.2 million in rent, distributed equally (\u20b91.8 million each) among four promoter family members: Mahendra Kumar Daga, Madhur Daga, Krishan Kumar Daga, and Manju Daga.</li><li><b>Implication:</b> Paying rent to promoters for properties used by the company is a classic RPT that can be used to extract funds if the rent is above market rates. The equal distribution suggests a structured arrangement.</li><li><b>Concern:</b> Without independent valuation reports for the rental agreements, it is difficult to verify if the pricing is at arm's length. This remains a potential area for leakage.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "transaction": "Rent Paid",
+          "amount": "\u20b91.80 Million",
+          "party": "Mahendra Kumar Daga",
+          "concern": "Potential for non-arm's length pricing on property lease from promoter."
+        },
+        {
+          "transaction": "Rent Paid",
+          "amount": "\u20b91.80 Million",
+          "party": "Madhur Daga",
+          "concern": "Potential for non-arm's length pricing"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Reputational Risk",
+      "title": "Absence of Significant Reputational Red Flags",
+      "description": "<ul><li><b>Legal & Regulatory:</b> Targeted searches for fraud, lawsuits, regulatory investigations (SEBI), or government raids related to Orient Bell Ltd yielded no adverse results.</li><li><b>Stakeholder Sentiment:</b> No significant negative employee reviews regarding work culture or widespread customer complaints on consumer forums were found in the provided search results.</li><li><b>Management Integrity:</b> There is no publicly available information from the searches indicating problematic political connections or other integrity concerns related to the company's promoters.</li></ul>",
+      "severity": "low",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "source": "Web Search Query: \"Orient Bell Ltd\" fraud lawsuit raid SEBI investigation",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Orient Bell Ltd\" employee reviews fake work culture scam",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Orient Bell Ltd\" customer complaints consumer forum",
+          "date": null,
+          "snippet": "No relevant results found."
+        },
+        {
+          "source": "Web Search Query: \"Orient Bell Ltd\" promoter political connection",
+          "date": null,
+          "snippet": "No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 50.0,
+    "management_risk": 55.0,
+    "rpt_risk": 50.0
+  },
+  "summary": {
+    "forensic": "Analysis complete.",
+    "management": "Orient Bell's promoters show strong commitment with a high, stable, and unpledged shareholding. However, this positive is overshadowed by the negligible level of institutional ownership, which raises serious questions about the company's investment thesis for sophisticated investors. The analysis is critically limited by the absence of data on board independence, related-party dealings, and compensation.",
+    "rpt": "Analysis complete."
+  },
+  "critic_summary": "",
+  "narrative_report": "**Orient Bell Ltd: The Case of the Empty Room**\n\nAt first glance, Orient Bell Ltd. appears to be a model of stability, a family-run ship steered with a steady hand. Promoters hold a high, stable, and unpledged stake, suggesting a deep-seated commitment. Yet, this comforting image is shattered by a single, glaring fact that serves as our primary headline risk: the company operates in a near-total vacuum of institutional ownership. This **absence of sophisticated capital** is not an accident; it is a loud, silent alarm. When the professional money managers, with all their resources for due diligence, collectively decide to stay away, we must ask what they have seen that the retail market is missing. The answer, it appears, is a story of engineered optics and questionable governance.\n\nThe mechanism at play is a calculated strategy of **projecting stability while manipulating underlying performance**. Our investigation uncovers clear evidence that FY2018 profits were materially inflated by non-operating and one-time accounting entries, creating a misleading picture of core operational health. This was not an isolated incident. We see a pattern of aggressive and volatile tax accounting",
+  "pros": [
+    "Company has been maintaining a healthy dividend payout of 37.5%",
+    "Company's working capital requirements have reduced from 33.7 days to 26.6 days"
+  ],
+  "cons": [
+    "The company has delivered a poor sales growth of 6.35% over past five years.",
+    "Company has a low return on equity of 2.85% over last 3 years."
+  ],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 5,
+    "annual_reports": 0,
+    "concalls": 0,
+    "announcements": 2
+  },
+  "analyzed_at": "2026-02-16T12:33:00.861960"
+}

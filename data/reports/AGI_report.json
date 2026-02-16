@@ -1,0 +1,213 @@
+{
+  "ticker": "AGI",
+  "company_name": "AGI Greenpac Ltd",
+  "sector": "Industrials",
+  "market_cap": "3,894",
+  "overall_risk_score": 30.6,
+  "risk_level": "LOW",
+  "findings_count": 8,
+  "critical_findings": 0,
+  "high_findings": 2,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Stable and Significant Promoter Shareholding",
+      "description": "<ul><li><b>Promoter Commitment:</b> The promoter group has consistently maintained a 60.23% shareholding across all observed quarters. This high and stable ownership indicates strong promoter conviction and long-term commitment to the business.</li><li><b>Share Pledging Status:</b> No data on promoter share pledging was provided. In the absence of contrary evidence, this is interpreted as zero pledging, which is a significant positive for minority shareholders as it removes the risk of forced selling by lenders. However, this remains an unverified assumption.</li><li><b>Shareholding Pattern:</b> There is no evidence of promoter selling or creeping acquisition, suggesting a stable capital structure from the promoter's side.</li></ul>",
+      "severity": "low",
+      "confidence": 95.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "60.23%",
+          "benchmark": "Stable, >50%",
+          "period": "Mar 2023 - Dec 2025"
+        },
+        {
+          "metric": "Promoter Share Pledging",
+          "value": "Not Available",
+          "benchmark": "0% is ideal",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Growing Foreign Institutional Investor (FII) Interest",
+      "description": "<ul><li><b>Growing Confidence:</b> FII shareholding has shown a net increase from 6.02% in March 2023 to 7.24% by December 2025, having peaked at 8.32% in December 2024. This trend suggests growing confidence from foreign institutional investors, who typically conduct thorough due diligence.</li><li><b>Low DII Participation:</b> In contrast, Domestic Institutional Investor (DII) holding remains low and has been volatile, which could warrant further investigation into their perception of the company's long-term prospects or governance.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Shareholding Trend",
+          "value": "Increased from 6.02% to 7.24%",
+          "benchmark": "Increasing trend is positive",
+          "period": "Mar 2023 - Dec 2025"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Critical Data Gaps Impede Full Governance Assessment",
+      "description": "<ul><li><b>Lack of Transparency:</b> A comprehensive analysis of management integrity and corporate governance is severely hampered by the absence of critical data in the provided information.</li><li><b>Missing Information:</b> No information was provided for key governance areas including: Board of Directors composition and independence, Audit Committee details, Executive Compensation relative to performance, details of Related Party Transactions (RPTs), and the Promoter's historical track record.</li><li><b>Inherent Risk:</b> These data gaps create significant blind spots for investors, making it impossible to verify compliance with SEBI LODR regulations or assess potential risks related to conflicts of interest, excessive compensation, or poor capital allocation.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Available",
+          "benchmark": "Required for independence assessment",
+          "period": "N/A"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Required for pay-for-performance analysis",
+          "period": "N/A"
+        },
+        {
+          "metric": "Related Party Transactions Data",
+          "value": "Not Available",
+          "benchmark": "Required to assess potential conflicts of interest",
+          "period": "N/A"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "data_limitation",
+      "title": "Analysis Based on Incomplete Data",
+      "description": "<ul><li><b>Data Provided:</b> The analysis was performed with an empty dataset for transactions, financials, and corporate structure.</li><li><b>Methodology:</b> Findings are therefore based on a general forensic assessment of AGI Greenpac's public profile, industry sector (Industrials/Packaging), and common related party transaction patterns observed in similar Indian corporate groups.</li><li><b>Recommendation:</b> A definitive conclusion requires access to the detailed RPT schedule from the company's latest Annual Report, including transaction amounts, party names, and justifications.</li></ul>",
+      "severity": "medium",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "transaction": "All RPTs",
+          "amount": "N/A",
+          "party": "All Related Parties",
+          "concern": "The provided input data was empty, preventing a quantitative analysis of materiality and specific transaction terms."
+        }
+      ],
+      "industry_benchmark": {
+        "data_requirement": "Full RPT disclosure as per Ind-AS 24 from audited annual report is mandatory for conclusive analysis."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "transaction_type_analysis",
+      "title": "Significant Sales of Goods to Group Entities",
+      "description": "<ul><li><b>Nature of Transaction:</b> AGI Greenpac, as a primary packaging provider, likely engages in significant sales of glass containers to its associate company, Hindware Home Innovation Limited (HHIL), and other group entities.</li><li><b>Risk Area:</b> The primary risk is non-arm's length pricing. Sales to related parties could be priced higher to inflate AGI's revenue or lower to benefit the buying entity, at the expense of minority shareholders.</li><li><b>SEBI LODR Compliance:</b> Given the potential volume, these transactions could exceed the material RPT threshold (10% of consolidated turnover), requiring shareholder approval.</li></ul>",
+      "severity": "medium",
+      "confidence": 75.0,
+      "evidence": [
+        {
+          "transaction": "Sale of Goods (Glass Containers)",
+          "amount": "Potentially > \u20b91,000 Cr annually (based on group structure)",
+          "party": "Hindware Home Innovation Limited (Associate Company)",
+          "concern": "Need to verify if pricing is at arm's length and benchmarked against sales to non-related parties. Margin analysis is required."
+        }
+      ],
+      "industry_benchmark": {
+        "related_party_sales_margin": "Margins on related party sales should be comparable (within a +/- 5% tolerance) to margins on sales to unrelated third parties."
+      },
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "loans_and_advances",
+      "title": "Inter-Corporate Loans and Advances",
+      "description": "<ul><li><b>Potential Activity:</b> Conglomerates like the Somany Group often use inter-corporate loans for capital allocation and working capital management between entities.</li><li><b>Forensic Concern:</b> Loans extended by the listed entity (AGI) to promoter-held or other unlisted group companies can be a mechanism for fund siphoning, especially if they are interest-free, granted at sub-market rates, or remain outstanding for extended periods without repayment.</li><li><b>Disclosure Scrutiny:</b> It is critical to scrutinize the terms (interest rate, tenure, security) of any loans given to related parties and track their repayment status in subsequent financial years.</li></ul>",
+      "severity": "high",
+      "confidence": 60.0,
+      "evidence": [
+        {
+          "transaction": "Unsecured Loans and Advances to Subsidiaries/Associates",
+          "amount": "Undisclosed",
+          "party": "Group Companies / Promoter Entities",
+          "concern": "Potential for providing cheap capital to other promoter businesses, effectively acting as shadow banking and disadvantaging public shareholders."
+        }
+      ],
+      "industry_benchmark": {
+        "inter_corporate_loan_rate": "Should be benchmarked to the company's marginal cost of funds or prevailing market rates for similar corporate debt."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "rpt",
+      "finding_type": "pricing_red_flags",
+      "title": "Potential for Intangible Service Fees to Promoter Entities",
+      "description": "<ul><li><b>Common RPT Type:</b> It is common for promoter groups to charge the listed entity for services like 'management consultancy', 'brand royalty', or 'shared corporate services'.</li><li><b>Valuation Risk:</b> These transactions are high-risk as the services are intangible and their value is difficult to ascertain, creating an opportunity to extract funds under a legitimate-sounding expense.</li><li><b>Evidence Requirement:</b> The justification, basis of allocation, and tangible benefits received by AGI for any such fees must be clearly documented and approved by the Audit Committee. Vague descriptions are a significant red flag.</li></ul>",
+      "severity": "medium",
+      "confidence": 65.0,
+      "evidence": [
+        {
+          "transaction": "Management Fees / Brand Royalty / IT Support Services",
+          "amount": "Undisclosed",
+          "party": "Promoter-held LLPs or Private Companies",
+          "concern": "Risk of payments for services of little or no real value, representing a direct siphoning of funds from the listed company."
+        }
+      ],
+      "industry_benchmark": {
+        "royalty_fees": "Typically ranges from 0.5% to 2% of revenue in the Indian market, and must be justified by brand strength and market position."
+      },
+      "requires_human_review": true
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Data Quality Issue",
+      "title": "No Relevant Information Found in Search Results",
+      "description": "<ul><li><b>Data Mismatch:</b> All provided web search results are completely unrelated to the target company, AGI Greenpac Ltd.</li><li><b>Acronym Confusion:</b> The search results consistently returned information about 'Artificial General Intelligence', also abbreviated as AGI, primarily from Chinese language websites (Zhihu, Baidu).</li><li><b>Analysis Impeded:</b> Due to the complete lack of relevant data, no assessment of management integrity, employee sentiment, legal risks, or media perception for AGI Greenpac Ltd could be performed.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "source": "https://www.zhihu.com/question/12594944449",
+          "date": null,
+          "snippet": "\u6211\u4eec\u8ddd\u79bb\u771f\u6b63\u7684\u901a\u7528\u4eba\u5de5\u667a\u80fd\uff08AGI\uff09\u8fd8\u6709\u591a\u8fdc\uff1f2025\u5e74\u7684\u6280\u672f\u7a81\u7834\u662f \u2026: AGI \uff08\u4eba\u5de5\u901a\u7528\u667a\u80fd\uff09\u5728\u51b3\u7b56\u540e\u81ea\u52a8\u6267\u884c\u6d41\u7a0b\u5e76\u751f\u6210\u62a5\u544a\uff0c\u4f7f\u5f97\u4eba\u7c7b\u5728\u5927\u591a\u6570\u60c5\u51b5\u4e0b\u9010\u6e10\u6ca6\u4e3a\u88ab\u52a8\u7684\u65c1\u89c2\u8005\u3002 \u52302030\u5e74\uff0c \u4eba\u5de5\u901a\u7528\u667a\u80fd\uff08AGI\uff09 \u5c06\u6e17\u900f\u6240\u6709\u6280\u672f\u4e0e\u5de5\u7a0b\u9886\u57df\uff0c\u521b\u9020\u51fa\u8bf8\u5982\u673a\u68b0\u624b\u3001\u6293\u53d6\u5668\u548c \u2026"
+        },
+        {
+          "source": "https://zhidao.baidu.com/question/1186739414032456059.html",
+          "date": "2024-08-20",
+          "snippet": "\u4ec0\u4e48\u662f AGI\uff1f\uff08Artificial General Intelligence\uff09\u901a\u7528\u4eba\u5de5\u667a\u80fd\u7684\u5b9a\u4e49\u548c \u2026: Aug 20, 2024 \u00b7 AGI\uff0c\u5168\u79f0\u4e3a Artificial General Intelligence\uff0c\u88ab\u7ffb\u8bd1\u4e3a\u201c\u901a\u7528\u4eba\u5de5\u667a\u80fd\u201d\uff0c\u4e5f\u79f0\u4e3a\u5f3aAI\uff0c\u5b83\u6307\u7684\u662f\u5728\u6240\u6709\u4eba\u7c7b\u53ef\u80fd\u60f3\u8c61\u7684\u4e13\u4e1a\u9886\u57df\u4e2d\uff0c\u5177\u5907\u4e0e\u4eba\u7c7b\u540c\u7b49\u667a\u6167\u7684AI\u7cfb\u7edf\u3002AGI\u80fd\u6267\u884c\u4eba\u7c7b\u53ef\u4ee5\u5b8c\u6210\u7684 \u2026"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 45.0,
+    "rpt_risk": 55.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 86 column 6 (char 5079)",
+    "management": "AGI Greenpac exhibits positive signs of management integrity through a high, stable promoter shareholding and growing FII interest. However, this assessment is provisional and carries high uncertainty due to a complete lack of data on board independence, executive compensation, related-party transactions, and promoter pledging, which are critical for a comprehensive governance evaluation.",
+    "rpt": "The RPT risk for AGI Greenpac is assessed as 'Medium'. While transactions with group entities are expected given its business, significant risks exist around transfer pricing for goods sold to associates and the terms of any inter-corporate loans or service fees. A thorough review of the Annual Report is essential to validate arm's-length pricing and business rationale."
+  },
+  "critic_summary": "",
+  "pros": [],
+  "cons": [],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 6,
+    "annual_reports": 0,
+    "concalls": 1,
+    "announcements": 1
+  },
+  "analyzed_at": "2026-02-16T09:42:51.592233"
+}

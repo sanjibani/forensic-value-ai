@@ -1,0 +1,158 @@
+{
+  "ticker": "MENONBE",
+  "company_name": "Menon Bearings Ltd",
+  "sector": "Consumer Discretionary",
+  "market_cap": "664",
+  "overall_risk_score": 12.8,
+  "risk_level": "LOW",
+  "findings_count": 5,
+  "critical_findings": 0,
+  "high_findings": 1,
+  "findings": [
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "High and Unpledged Promoter Shareholding",
+      "description": "<ul><li><b>High Promoter Ownership:</b> Promoters consistently hold a significant majority stake, currently at 68.44%. This indicates strong 'skin in the game' and alignment of promoter interests with those of minority shareholders.</li><li><b>Zero Pledging:</b> The provided data indicates no pledging of promoter shares. This is a significant positive, suggesting financial stability of the promoters and reducing the risk of forced selling due to margin calls, which could depress the stock price.</li></ul>",
+      "severity": "low",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Shareholding",
+          "value": "68.44%",
+          "benchmark": ">50% is considered high",
+          "period": "Mar 2025"
+        },
+        {
+          "metric": "Promoter Share Pledging",
+          "value": "0%",
+          "benchmark": "0% is ideal",
+          "period": "Latest available data"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Gradual Promoter Stake Dilution",
+      "description": "<ul><li><b>Consistent Selling:</b> Promoter shareholding has decreased from 71.25% in March 2023 to 68.44% as of September 2024. This represents a dilution of approximately 2.81 percentage points over 18 months.</li><li><b>Potential Motivation:</b> While not a drastic reduction, this consistent selling pattern could indicate promoter need for liquidity, diversification, or a less optimistic view on the company's near-term prospects. This trend warrants monitoring.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Promoter Holding Change",
+          "value": "-2.81%",
+          "benchmark": "Any consistent reduction is a concern",
+          "period": "Mar 2023 to Sep 2024"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Declining Foreign Institutional Investor (FII) Holding",
+      "description": "<ul><li><b>Sustained FII Exit:</b> FII shareholding has steadily declined from 1.64% in March 2023 to a projected 0.38% by December 2025.</li><li><b>Negative Signal:</b> A consistent exit by institutional investors can be a red flag, potentially indicating concerns about the company's growth prospects, valuation, or governance standards from the perspective of sophisticated investors.</li></ul>",
+      "severity": "medium",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "FII Holding Change",
+          "value": "-1.26%",
+          "benchmark": "Positive or stable FII holding is preferred",
+          "period": "Mar 2023 to Dec 2025 (projected)"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "management",
+      "finding_type": "governance_category",
+      "title": "Critical Lack of Data on Key Governance Pillars",
+      "description": "<ul><li><b>No Board Data:</b> Information regarding board composition, the ratio of independent directors, committee structures (especially Audit Committee), and director tenure is absent. This prevents any assessment of board independence and oversight quality, a cornerstone of corporate governance.</li><li><b>No Compensation Data:</b> There is no information on executive compensation, its relation to net profit, or its growth compared to company performance. This opacity makes it impossible to assess if management is being rewarded fairly or excessively.</li><li><b>No Related Party Data:</b> Details on related party transactions (RPTs) and the complexity of promoter-linked entities are not provided. This is a major red flag, as opaque RPTs can be a primary method for siphoning funds from the company.</li></ul>",
+      "severity": "high",
+      "confidence": 100.0,
+      "evidence": [
+        {
+          "metric": "Board Composition Data",
+          "value": "Not Available",
+          "benchmark": "Required for SEBI LODR compliance analysis",
+          "period": "Current"
+        },
+        {
+          "metric": "Executive Compensation Data",
+          "value": "Not Available",
+          "benchmark": "Required for assessing alignment with performance",
+          "period": "Current"
+        },
+        {
+          "metric": "Related Party Transaction Data",
+          "value": "Not Available",
+          "benchmark": "Required for assessing potential fund diversion",
+          "period": "Current"
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    },
+    {
+      "agent_name": "market_intel",
+      "finding_type": "Absence of Negative Indicators",
+      "title": "No Significant Red Flags Identified in Public Domain Searches",
+      "description": "<ul><li><b>Regulatory & Legal:</b> No public records of fraud, lawsuits, SEBI investigations, or raids were found for Menon Bearings Ltd.</li><li><b>Employee & Customer Sentiment:</b> Searches for widespread negative employee reviews (e.g., 'scam', 'fake work') or significant customer complaints in consumer forums did not yield any relevant results.</li><li><b>Promoter Scrutiny:</b> No evidence of high-profile political connections or other integrity-related red flags concerning the promoters was discovered in the public domain.</li></ul>",
+      "severity": "low",
+      "confidence": 90.0,
+      "evidence": [
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Menon Bearings Ltd\" fraud lawsuit raid SEBI investigation - Result: No relevant results found."
+        },
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Menon Bearings Ltd\" employee reviews fake work culture scam - Result: No relevant results found."
+        },
+        {
+          "source": "Web Search Query",
+          "date": null,
+          "snippet": "Query: \"Menon Bearings Ltd\" customer complaints consumer forum - Result: No relevant results found."
+        }
+      ],
+      "industry_benchmark": {},
+      "requires_human_review": false
+    }
+  ],
+  "scores": {
+    "forensic_risk": 0.0,
+    "management_risk": 45.0,
+    "rpt_risk": 0.0
+  },
+  "summary": {
+    "forensic": "Analysis failed: Expecting ',' delimiter: line 52 column 6 (char 2899)",
+    "management": "Menon Bearings' promoters demonstrate commitment through a high, unpledged shareholding, which is a significant positive. However, this is offset by a pattern of gradual stake dilution and declining FII interest. A comprehensive governance assessment is severely hindered by a critical lack of data on board independence, executive compensation, and related party transactions, raising significant transparency concerns.",
+    "rpt": "Analysis failed: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  "critic_summary": "",
+  "pros": [
+    "Company has been maintaining a healthy dividend payout of 43.7%"
+  ],
+  "cons": [],
+  "data_sources": [
+    "screener.in",
+    "nse_announcements",
+    "concalls"
+  ],
+  "data_depth": {
+    "financial_years": 12,
+    "shareholding_quarters": 4,
+    "annual_reports": 0,
+    "concalls": 1,
+    "announcements": 0
+  },
+  "analyzed_at": "2026-02-16T11:25:20.392433"
+}
