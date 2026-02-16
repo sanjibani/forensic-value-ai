@@ -1,114 +1,74 @@
-# ForensicValue AI
+# ForensicValue AI 🕵️‍♂️📈
 
-> Multi-agent forensic accounting platform for Indian equity markets.
+**Automated Forensic Accounting & Management Integrity Analysis System**
 
-ForensicValue AI uses a team of specialized LLM-powered agents to detect accounting irregularities, governance red flags, and related party transaction risks in Indian listed companies.
+ForensicValue AI is a multi-agent system designed to detect accounting irregularities, governance risks, and "value traps" in Indian listed companies (NSE/BSE).
 
-## Architecture
+![Dashboard](https://raw.githubusercontent.com/sanjibani/forensic-value-ai/main/assets/dashboard_screenshot.png)
 
-![System Architecture](docs/architecture.png)
+## 🚀 Features
 
-```
-Data Sources → Memory Load → Parallel Agents → Critic → Report
-                               ├── Forensic
-                               ├── Management
-                               ├── RPT
-                               └── Market Intelligence (New)
-```
+- **Multi-Agent Architecture**:
+    - **Forensic Agent**: Analyzes 10-year financials & annual report text for anomalies.
+    - **Management Agent**: Investigates promoter pledging, board independence, and related parties.
+    - **RPT Agent**: Scrutinizes Related Party Transactions for fund siphoning.
+    - **Market Intelligence Agent**: Searches web/social media for fraud allegations & sentiment.
+    - **Narrative Agent**: Synthesizes all findings into a "Forensic Detective Story".
+- **Deep Document Analysis**: Downloads and parses Annual Reports & Concall Transcripts for rare insights.
+- **Self-Healing Pipeline**: Robust error handling with `json_repair` and auto-retries.
+- **Interactive Dashboard**: Streamlit-based UI for reports and batch processing.
 
-## App Components (Routes)
+## 🛠️ Installation (Local)
 
-- **Analysis Dashboard**: The main interface for viewing detailed forensic reports for individual companies. Shows risk scores, detailed findings, and data depth metrics.
-- **Batch Runner**: A dedicated tool for managing large-scale analysis. Includes a pre-loaded list of 50 NSE Microcap companies and batch execution controls.
-- **System Architecture**: A visual representation of the multi-agent workflow and component stack.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/sanjibani/forensic-value-ai.git
+    cd forensic-value-ai
+    ```
 
-## Quick Start
+2.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### 1. Setup
-```bash
-# Clone and enter directory
-cd forensic-value-ai
+3.  **Set up environment**:
+    Create a `.env` file (see `.env.example`):
+    ```env
+    # Required
+    GOOGLE_API_KEY=your_gemini_key
+    # Optional
+    ANTHROPIC_API_KEY=your_claude_key
+    OPENAI_API_KEY=your_openai_key
+    ```
 
-# Create virtual environment
-python -m venv venv && source venv/bin/activate
+4.  **Run the Dashboard**:
+    ```bash
+    streamlit run dashboard.py
+    ```
 
-# Install dependencies
-pip install -r requirements.txt
+## ☁️ Deployment on Streamlit Cloud
 
-# Configure environment
-cp .env.example .env
-# Edit .env — set GOOGLE_API_KEY (free tier) or OPENROUTER_API_KEY
-```
+1.  Push this code to your GitHub repository.
+2.  Go to [share.streamlit.io](https://share.streamlit.io).
+3.  Connect your GitHub account.
+4.  Select the `forensic-value-ai` repo.
+5.  Set "Main file path" to `dashboard.py`.
+6.  Add your API keys (`GOOGLE_API_KEY`, etc.) in the **Advanced Settings -> Secrets** section.
+7.  Click **Deploy**.
 
-### 2. Run Analysis (CLI)
-```bash
-# Analyze a single company (fetches data + runs agents)
-python mvp_run.py INFY
+## 🐳 Docker Deployment
 
-# Analyze a batch
-python mvp_run.py --batch "TCS,INFY,WIPRO"
-```
+1.  **Build & Run**:
+    ```bash
+    docker-compose up --build
+    ```
+2.  Access at `http://localhost:8501`.
 
-### 3. Launch Dashboard
-```bash
-streamlit run dashboard.py
-```
-Access the dashboard at `http://localhost:8501`.
+## 🧠 System Architecture
 
-## Project Structure
+The system uses **LangGraph** to orchestrate agents:
+`Fetcher` -> `Forensic/Mgmt/RPT/Market` (Parallel) -> `Aggregator` -> `Critic` -> `Narrative` -> `Report`.
 
-```
-forensic-value-ai/
-├── dashboard.py              # Streamlit research dashboard
-├── mvp_run.py                # CLI runner (MVP)
-├── data/                     # Local data storage (JSON)
-│   ├── reports/              # Final analysis reports
-│   ├── company_cache/        # Raw fetched data
-│   └── tickers.json          # Microcap list
-├── src/
-│   ├── config.py             # Pydantic settings
-│   ├── llm/
-│   │   ├── provider.py       # Multi-provider abstraction
-│   │   └── prompts.py        # Agent prompt templates
-│   ├── agents/
-│   │   ├── base.py           # Base agent class
-│   │   ├── forensic.py       # Forensic Accounting Agent
-│   │   ├── management.py     # Management Integrity Agent
-│   │   ├── rpt.py            # Related Party Transaction Agent
-│   │   └── critic.py         # Critic/Validator Agent
-│   ├── graph/
-│   │   ├── state.py          # LangGraph state definition
-│   │   └── workflow.py       # Workflow orchestrator
-│   ├── data/
-│   │   ├── fetcher.py        # screener.in data scraping
-│   │   └── pdf_parser.py     # Annual report PDF parser
-│   ├── memory/
-│   │   ├── vector_store.py   # Qdrant vector storage
-│   │   ├── feedback.py       # Feedback memory orchestrator
-│   │   └── confidence.py     # Confidence adjustment algorithm
-│   └── storage/
-│       ├── postgres.py       # PostgreSQL manager
-│       └── redis_cache.py    # Redis cache layer
-└── tests/
-```
+## 📜 License
 
-## LLM Provider Support
-
-| Provider | Free? | How to Enable |
-|----------|-------|---------------|
-| Google Gemini | ✅ 50 req/day | Set `GOOGLE_API_KEY` |
-| Antigravity Proxy | ✅ Unlimited | Set `ANTIGRAVITY_ENABLED=true` |
-| OpenRouter | 💰 Pay-per-use | Set `OPENROUTER_API_KEY` |
-
-Automatic fallback: if the primary provider is rate-limited, the system tries the next one.
-
-## Agents
-
-- **Forensic Accounting**: Revenue recognition, cash flow vs profit, working capital manipulation, capitalization policies
-- **Management Integrity**: Promoter pledging, board composition, executive compensation, governance quality
-- **RPT Analysis**: Related party transaction volume, pricing, structural red flags, non-arm's-length deals
-- **Critic/Validator**: Cross-validates all findings, reduces false positives, requests reinvestigation
-
-## License
-
-MIT
+MIT License.

@@ -44,3 +44,21 @@ services:
     restart: unless-stopped
     environment:
       QDRANT__SERVICE__GRPC_PORT: 6334
+
+  app:
+    build: .
+    container_name: fv_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - REDIS_HOST=redis
+      - QDRANT_HOST=qdrant
+    depends_on:
+      - postgres
+      - redis
+      - qdrant
+    restart: unless-stopped
